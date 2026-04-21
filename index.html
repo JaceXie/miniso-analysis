@@ -3,1729 +3,909 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>名创优品 深度分析 — 巴菲特神谕分析师</title>
-<meta name="description" content="融合巴菲特投资哲学与现代多维分析框架的名创优品（9896.HK）深度分析报告">
+<title>名创优品 9896 深度分析 — 巴菲特神谕分析师</title>
+<meta name="description" content="融合巴菲特投资哲学与现代多维分析框架的名创优品（HKEX: 9896）深度分析报告">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ═══════════════════════════════════════
-   Morandi Palette — Light & Dark Themes
-   ═══════════════════════════════════════ */
-
 :root {
-  /* ── Light Theme (Morandi warm) ── */
-  --bg: #F2EDE8;
-  --bg-alt: #EBE4DD;
-  --surface: #FFFFFF;
-  --surface-hover: #F9F6F3;
-  --border: #D8CFCA;
-  --border-accent: #C4A882;
-  --text: #4A433E;
-  --text-secondary: #7A726B;
-  --text-dim: #A09890;
-  --heading: #3A3330;
-
-  /* Morandi Accents */
-  --morandi-rose: #C9A9A0;
-  --morandi-sage: #A3B0A0;
-  --morandi-sand: #C4A882;
-  --morandi-blue: #9EB0BC;
-  --morandi-mauve: #B0A0B0;
-  --morandi-clay: #BEA898;
-  --morandi-olive: #A0A890;
-  --morandi-stone: #B0AAA0;
-
-  --accent: #8B7355;
-  --accent-light: rgba(139, 115, 85, 0.08);
-  --accent-border: rgba(139, 115, 85, 0.2);
-
-  /* Semantic */
-  --green: #7A9E7E;
-  --green-bg: rgba(122,158,126,0.1);
-  --red: #BF7B6E;
-  --red-bg: rgba(191,123,110,0.1);
-  --yellow: #C4A060;
-  --yellow-bg: rgba(196,160,96,0.1);
-  --blue: #7E9BB0;
-  --blue-bg: rgba(126,155,176,0.1);
-
-  /* Table */
-  --table-header-bg: #EDE7E1;
-  --table-stripe: rgba(0,0,0,0.02);
-  --table-hover: rgba(139,115,85,0.06);
-
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(74,67,62,0.06);
-  --shadow-md: 0 4px 12px rgba(74,67,62,0.08);
+  --bg: #F2EDE8; --bg-alt: #EBE4DD; --surface: #FFFFFF; --surface-hover: #F9F6F3;
+  --border: #D8CFCA; --border-accent: #C4A882; --text: #4A433E; --text-secondary: #7A726B;
+  --text-dim: #A09890; --heading: #3A3330;
+  --morandi-rose: #C9A9A0; --morandi-sage: #A3B0A0; --morandi-sand: #C4A882;
+  --morandi-blue: #9EB0BC; --morandi-mauve: #B0A0B0; --morandi-clay: #BEA898;
+  --morandi-olive: #A0A890; --morandi-stone: #B0AAA0;
+  --accent: #8B7355; --accent-light: rgba(139,115,85,0.08); --accent-border: rgba(139,115,85,0.2);
+  --green: #7A9E7E; --green-bg: rgba(122,158,126,0.1); --red: #BF7B6E; --red-bg: rgba(191,123,110,0.1);
+  --yellow: #C4A060; --yellow-bg: rgba(196,160,96,0.1); --blue: #7E9BB0; --blue-bg: rgba(126,155,176,0.1);
+  --table-header-bg: #EDE7E1; --table-stripe: rgba(0,0,0,0.02); --table-hover: rgba(139,115,85,0.06);
+  --shadow-sm: 0 1px 3px rgba(74,67,62,0.06); --shadow-md: 0 4px 12px rgba(74,67,62,0.08);
   --shadow-lg: 0 8px 32px rgba(74,67,62,0.1);
-
-  /* Badge */
-  --badge-buy-bg: rgba(122,158,126,0.15);
-  --badge-buy-text: #5A7E5E;
-  --badge-sell-bg: rgba(191,123,110,0.15);
-  --badge-sell-text: #9E5A4E;
-  --badge-hold-bg: rgba(196,160,96,0.15);
-  --badge-hold-text: #8E7030;
-
-  /* Layout */
-  --radius: 12px;
-  --radius-sm: 8px;
-  --radius-lg: 16px;
-  --content-width: 900px;
-  --sidebar-width: 260px;
+  --badge-buy-bg: rgba(122,158,126,0.15); --badge-buy-text: #5A7E5E;
+  --badge-sell-bg: rgba(191,123,110,0.15); --badge-sell-text: #9E5A4E;
+  --badge-hold-bg: rgba(196,160,96,0.15); --badge-hold-text: #8E7030;
+  --radius: 12px; --radius-sm: 8px; --radius-lg: 16px;
+  --content-width: 900px; --sidebar-width: 260px;
 }
-
 [data-theme="dark"] {
-  --bg: #262320;
-  --bg-alt: #2E2A27;
-  --surface: #33302D;
-  --surface-hover: #3B3734;
-  --border: #4A4540;
-  --border-accent: #8B7355;
-  --text: #E0D8D0;
-  --text-secondary: #B0A89E;
-  --text-dim: #807870;
-  --heading: #F0E8E0;
-
-  --accent: #C4A882;
-  --accent-light: rgba(196,168,130,0.1);
-  --accent-border: rgba(196,168,130,0.25);
-
-  --morandi-rose: #C9A9A0;
-  --morandi-sage: #8EA088;
-  --morandi-sand: #C4A882;
-  --morandi-blue: #8AA0B0;
-  --morandi-mauve: #A090A0;
-
-  --green: #8EB892;
-  --green-bg: rgba(142,184,146,0.12);
-  --red: #D08878;
-  --red-bg: rgba(208,136,120,0.12);
-  --yellow: #D4B070;
-  --yellow-bg: rgba(212,176,112,0.12);
-  --blue: #8EAEC0;
-  --blue-bg: rgba(142,174,192,0.12);
-
-  --table-header-bg: #3B3734;
-  --table-stripe: rgba(255,255,255,0.02);
-  --table-hover: rgba(196,168,130,0.08);
-
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.25);
+  --bg: #262320; --bg-alt: #2E2A27; --surface: #33302D; --surface-hover: #3B3734;
+  --border: #4A4540; --border-accent: #8B7355; --text: #E0D8D0; --text-secondary: #B0A89E;
+  --text-dim: #807870; --heading: #F0E8E0;
+  --accent: #C4A882; --accent-light: rgba(196,168,130,0.1); --accent-border: rgba(196,168,130,0.25);
+  --morandi-rose: #C9A9A0; --morandi-sage: #8EA088; --morandi-sand: #C4A882;
+  --morandi-blue: #8AA0B0; --morandi-mauve: #A090A0;
+  --green: #8EB892; --green-bg: rgba(142,184,146,0.12); --red: #D08878; --red-bg: rgba(208,136,120,0.12);
+  --yellow: #D4B070; --yellow-bg: rgba(212,176,112,0.12); --blue: #8EAEC0; --blue-bg: rgba(142,174,192,0.12);
+  --table-header-bg: #3B3734; --table-stripe: rgba(255,255,255,0.02); --table-hover: rgba(196,168,130,0.08);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2); --shadow-md: 0 4px 12px rgba(0,0,0,0.25);
   --shadow-lg: 0 8px 32px rgba(0,0,0,0.3);
-
-  --badge-buy-bg: rgba(142,184,146,0.18);
-  --badge-buy-text: #8EB892;
-  --badge-sell-bg: rgba(208,136,120,0.18);
-  --badge-sell-text: #D08878;
-  --badge-hold-bg: rgba(212,176,112,0.18);
-  --badge-hold-text: #D4B070;
-}
-
-/* ═══════════════════════════════
-   Base Reset & Typography
-   ═══════════════════════════════ */
-
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-}
-
-body {
-  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background 0.4s ease, color 0.3s ease;
-}
-
-/* ═══════════════════════════════
-   Top Navigation Bar
-   ═══════════════════════════════ */
-
-.topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  box-shadow: var(--shadow-sm);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: background 0.4s, border-color 0.3s;
-}
-
-[data-theme="light"] .topbar { background: rgba(255,255,255,0.9); }
-[data-theme="dark"] .topbar { background: rgba(51,48,45,0.9); }
-
-.topbar-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.topbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--heading);
-  text-decoration: none;
-}
-
-.topbar-brand .logo {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: linear-gradient(135deg, var(--morandi-sand), var(--morandi-rose));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.9rem;
-  color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-.topbar-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.topbar-meta {
-  font-size: 0.75rem;
-  color: var(--text-dim);
-  margin-right: 12px;
-}
-
-.theme-toggle {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text-secondary);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  transition: all 0.25s;
-}
-
-.theme-toggle:hover {
-  background: var(--surface-hover);
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-/* ═══════════════════════════════
-   Layout: Sidebar + Content
-   ═══════════════════════════════ */
-
-.layout {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 72px 2rem 4rem;
-  display: flex;
-  gap: 2.5rem;
-}
-
-.sidebar {
-  width: var(--sidebar-width);
-  flex-shrink: 0;
-  position: sticky;
-  top: 72px;
-  height: calc(100vh - 88px);
-  overflow-y: auto;
-  padding: 1rem 0;
-}
-
-.sidebar::-webkit-scrollbar { width: 3px; }
-.sidebar::-webkit-scrollbar-track { background: transparent; }
-.sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
-
-.sidebar-nav { list-style: none; }
-
-.sidebar-nav li {
-  margin-bottom: 2px;
-}
-
-.sidebar-nav a {
-  display: block;
-  padding: 6px 12px;
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-  text-decoration: none;
-  border-radius: var(--radius-sm);
-  border-left: 2px solid transparent;
-  transition: all 0.2s;
-  line-height: 1.5;
-}
-
-.sidebar-nav a:hover {
-  color: var(--accent);
-  background: var(--accent-light);
-}
-
-.sidebar-nav a.active {
-  color: var(--accent);
-  border-left-color: var(--accent);
-  background: var(--accent-light);
-  font-weight: 500;
-}
-
-.sidebar-nav .nav-group {
-  font-size: 0.68rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--text-dim);
-  padding: 16px 12px 6px;
-}
-
-.content {
-  flex: 1;
-  min-width: 0;
-  max-width: var(--content-width);
-}
-
-/* ═══════════════════════════════
-   Hero Section
-   ═══════════════════════════════ */
-
-.hero {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow-md);
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--morandi-sand), var(--morandi-rose), var(--morandi-sage), var(--morandi-blue));
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.72rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--accent);
-  background: var(--accent-light);
-  border: 1px solid var(--accent-border);
-  border-radius: 999px;
-  padding: 4px 14px;
-  margin-bottom: 1.25rem;
-}
-
-.hero h1 {
-  font-family: 'Noto Serif SC', serif;
-  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-  font-weight: 700;
-  color: var(--heading);
-  line-height: 1.3;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
-}
-
-.hero-stat {
-  text-align: center;
-}
-
-.hero-stat .label {
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
-
-.hero-stat .value {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--heading);
-}
-
-.hero-stat .change {
-  font-size: 0.72rem;
-  margin-top: 2px;
-}
-
-.change.up { color: var(--green); }
-.change.down { color: var(--red); }
-
-/* ═══════════════════════════════
-   Verdict Card
-   ═══════════════════════════════ */
-
-.verdict {
-  background: linear-gradient(135deg, var(--surface), var(--bg-alt));
-  border: 1px solid var(--border-accent);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow-md);
-  position: relative;
-}
-
-.verdict::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0;
-  height: 3px;
-  background: var(--morandi-sand);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-}
-
-.verdict-title {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--accent);
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.verdict p {
-  font-size: 0.92rem;
-  line-height: 1.8;
-  color: var(--text);
-}
-
-.verdict strong {
-  color: var(--heading);
-}
-
-/* ═══════════════════════════════
-   Decision Summary Card
-   ═══════════════════════════════ */
-
-.decision-summary {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-left: 4px solid var(--green);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: var(--shadow-md);
-}
-.decision-summary .ds-title {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 1rem;
-}
-.decision-summary .ds-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-.decision-summary .ds-item .ds-label {
-  font-size: 0.68rem;
-  color: var(--text-dim);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-.decision-summary .ds-item .ds-value {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--heading);
-  margin-top: 2px;
-}
-.decision-summary .ds-item .ds-value.green { color: var(--green); }
-.decision-summary .ds-scenarios {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border);
-}
-
-/* ═══════════════════════════════
-   Module Sections
-   ═══════════════════════════════ */
-
-.module {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.3s;
-}
-
-.module:hover {
-  box-shadow: var(--shadow-md);
-}
-
-.module-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border);
-}
-
-.module-num {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 700;
-  flex-shrink: 0;
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.module-num.n1 { background: rgba(201,169,160,0.2); color: var(--morandi-rose); }
-.module-num.n2 { background: rgba(163,176,160,0.2); color: var(--morandi-sage); }
-.module-num.n3 { background: rgba(196,168,130,0.2); color: var(--morandi-sand); }
-.module-num.n4 { background: rgba(158,176,188,0.2); color: var(--morandi-blue); }
-.module-num.n5 { background: rgba(176,160,176,0.2); color: var(--morandi-mauve); }
-.module-num.n6 { background: rgba(190,168,152,0.2); color: var(--morandi-clay); }
-.module-num.n7 { background: rgba(201,169,160,0.2); color: var(--morandi-rose); }
-.module-num.n8 { background: rgba(163,176,160,0.2); color: var(--morandi-sage); }
-.module-num.n9 { background: rgba(196,168,130,0.2); color: var(--morandi-sand); }
-.module-num.n10 { background: rgba(158,176,188,0.2); color: var(--morandi-blue); }
-.module-num.n11 { background: rgba(191,123,110,0.15); color: var(--red); }
-.module-num.n12 { background: rgba(196,168,130,0.2); color: var(--morandi-sand); }
-
-.module h2 {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--heading);
-}
-
-.module h3 {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--heading);
-  margin: 1.5rem 0 0.75rem;
-}
-
-.module h3:first-of-type {
-  margin-top: 0;
-}
-
-.module p, .module li {
-  font-size: 0.88rem;
-  line-height: 1.8;
-  color: var(--text);
-}
-
-.module ul, .module ol {
-  padding-left: 1.5rem;
-  margin: 0.5rem 0;
-}
-
-.module li {
-  margin-bottom: 0.3rem;
-}
-
-.module strong {
-  color: var(--heading);
-  font-weight: 600;
-}
-
-/* ═══════════════════════════════
-   Tables
-   ═══════════════════════════════ */
-
-.table-wrapper {
-  overflow-x: auto;
-  margin: 1rem 0;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.82rem;
-  line-height: 1.5;
-}
-
-thead {
-  background: var(--table-header-bg);
-}
-
-th {
-  padding: 10px 14px;
-  font-weight: 600;
-  color: var(--heading);
-  text-align: left;
-  white-space: nowrap;
-  border-bottom: 2px solid var(--border);
-  font-size: 0.78rem;
-}
-
-td {
-  padding: 9px 14px;
-  border-bottom: 1px solid var(--border);
-  color: var(--text);
-  vertical-align: top;
-}
-
-tr:nth-child(even) { background: var(--table-stripe); }
-tr:hover { background: var(--table-hover); }
-
-td:first-child { font-weight: 500; color: var(--heading); }
-
-/* Numeric cells */
-.num { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; text-align: right; }
-th.num { text-align: right; }
-
-/* ═══════════════════════════════
-   Special Elements
-   ═══════════════════════════════ */
-
-.callout {
-  padding: 1rem 1.25rem;
-  border-radius: var(--radius-sm);
-  margin: 1rem 0;
-  font-size: 0.85rem;
-  line-height: 1.7;
-  border-left: 3px solid;
-}
-
-.callout.info { background: var(--blue-bg); border-color: var(--blue); }
-.callout.success { background: var(--green-bg); border-color: var(--green); }
-.callout.warning { background: var(--yellow-bg); border-color: var(--yellow); }
-.callout.danger { background: var(--red-bg); border-color: var(--red); }
-
-.callout-title {
-  font-weight: 600;
-  color: var(--heading);
-  margin-bottom: 4px;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.badge.buy { background: var(--badge-buy-bg); color: var(--badge-buy-text); }
-.badge.sell { background: var(--badge-sell-bg); color: var(--badge-sell-text); }
-.badge.hold { background: var(--badge-hold-bg); color: var(--badge-hold-text); }
-
-.rating-bar {
-  display: flex;
-  gap: 3px;
-  margin: 0.5rem 0;
-}
-
-.rating-bar .bar {
-  height: 6px;
-  border-radius: 3px;
-  flex: 1;
-  background: var(--border);
-  transition: background 0.3s;
-}
-
-.rating-bar .bar.filled { background: var(--morandi-sand); }
-
-.code-block {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 1rem 1.25rem;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.8rem;
-  line-height: 1.7;
-  overflow-x: auto;
-  margin: 1rem 0;
-  color: var(--text);
-}
-
-.highlight-box {
-  background: var(--accent-light);
-  border: 1px solid var(--accent-border);
-  border-radius: var(--radius);
-  padding: 1.25rem;
-  margin: 1rem 0;
-}
-
-.highlight-box .hl-label {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-/* Moat rating */
-.moat-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.moat-item:last-child { border-bottom: none; }
-
-.moat-label { flex: 1; font-size: 0.85rem; font-weight: 500; color: var(--heading); }
-
-.moat-rating {
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 2px 10px;
-  border-radius: 999px;
-}
-
-.moat-rating.wide { background: var(--green-bg); color: var(--green); }
-.moat-rating.narrow { background: var(--yellow-bg); color: var(--yellow); }
-.moat-rating.none { background: var(--red-bg); color: var(--red); }
-
-/* ═══════════════════════════════
-   Scorecard
-   ═══════════════════════════════ */
-
-.scorecard-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 6px;
-  margin: 1rem 0;
-}
-
-.score-row {
-  display: flex;
-  align-items: center;
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  background: var(--bg-alt);
-  gap: 12px;
-}
-
-.score-row .criteria {
-  flex: 1;
-  font-size: 0.82rem;
-  color: var(--text);
-}
-
-.score-row .score {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--accent);
-  min-width: 42px;
-  text-align: center;
-}
-
-.score-row .dots {
-  display: flex;
-  gap: 4px;
-}
-
-.score-row .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--border);
-}
-
-.score-row .dot.filled { background: var(--morandi-sand); }
-
-/* Grade badge */
-.grade-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.grade-badge.a { background: var(--green-bg); color: var(--green); border: 2px solid var(--green); }
-.grade-badge.b { background: var(--blue-bg); color: var(--blue); border: 2px solid var(--blue); }
-.grade-badge.c { background: var(--yellow-bg); color: var(--yellow); border: 2px solid var(--yellow); }
-
-/* ═══════════════════════════════
-   Decision Box
-   ═══════════════════════════════ */
-
-.decision-box {
-  background: var(--surface);
-  border: 2px solid var(--green);
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  margin: 1.5rem 0;
-}
-
-.decision-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 1.5rem;
-}
-
-.decision-rating {
-  font-family: 'Noto Serif SC', serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  padding: 8px 20px;
-  border-radius: var(--radius);
-  background: var(--green-bg);
-  color: var(--green);
-}
-
-.decision-price {
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.decision-price .current {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--heading);
-}
-
-.decision-price .target {
-  font-size: 0.82rem;
-  color: var(--text-secondary);
-}
-
-/* ═══════════════════════════════
-   Disclaimer
-   ═══════════════════════════════ */
-
-.disclaimer {
-  background: var(--bg-alt);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  margin-top: 2rem;
-  font-size: 0.78rem;
-  color: var(--text-dim);
-  line-height: 1.7;
-}
-
-.disclaimer strong { color: var(--text-secondary); }
-
-/* ═══════════════════════════════
-   Footer
-   ═══════════════════════════════ */
-
-.page-footer {
-  text-align: center;
-  padding: 2rem 0;
-  margin-top: 2rem;
-  border-top: 1px solid var(--border);
-  font-size: 0.75rem;
-  color: var(--text-dim);
-}
-
-.page-footer a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-.page-footer a:hover { text-decoration: underline; }
-
-/* ═══════════════════════════════
-   Back to top
-   ═══════════════════════════════ */
-
-.back-to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-md);
-  color: var(--text-secondary);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s;
-  z-index: 100;
-}
-
-.back-to-top.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.back-to-top:hover {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-}
-
-/* ═══════════════════════════════
-   Responsive
-   ═══════════════════════════════ */
-
-@media (max-width: 960px) {
-  .sidebar { display: none; }
-  .layout { padding: 72px 1.25rem 3rem; }
-  .hero, .module { padding: 1.5rem; }
-}
-
-@media (max-width: 600px) {
-  .layout { padding: 64px 1rem 2rem; }
-  .hero { padding: 1.25rem; }
-  .hero-stats { grid-template-columns: repeat(2, 1fr); }
-  .module { padding: 1.25rem; }
-  .topbar-meta { display: none; }
-  th, td { padding: 7px 10px; font-size: 0.75rem; }
-  .decision-summary .ds-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* ═══════════════════════════════
-   Print
-   ═══════════════════════════════ */
-@media print {
-  .topbar, .sidebar, .theme-toggle, .back-to-top { display: none !important; }
-  .layout { padding: 0; }
-  .module { break-inside: avoid; box-shadow: none; border: 1px solid #ddd; }
-}
+  --badge-buy-bg: rgba(142,184,146,0.18); --badge-buy-text: #8EB892;
+  --badge-sell-bg: rgba(208,136,120,0.18); --badge-sell-text: #D08878;
+  --badge-hold-bg: rgba(212,176,112,0.18); --badge-hold-text: #D4B070;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{font-size:16px;scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Noto Sans SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .4s,color .3s}
+.topbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--surface);border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:background .4s,border-color .3s}
+[data-theme="light"] .topbar{background:rgba(255,255,255,.9)}
+[data-theme="dark"] .topbar{background:rgba(51,48,45,.9)}
+.topbar-inner{max-width:1200px;margin:0 auto;padding:0 2rem;height:56px;display:flex;align-items:center;justify-content:space-between}
+.topbar-brand{display:flex;align-items:center;gap:10px;font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:600;color:var(--heading);text-decoration:none}
+.topbar-brand .logo{width:32px;height:32px;border-radius:8px;background:linear-gradient(135deg,var(--morandi-sand),var(--morandi-rose));display:flex;align-items:center;justify-content:center;font-size:.9rem;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.2)}
+.topbar-actions{display:flex;align-items:center;gap:8px}
+.topbar-meta{font-size:.75rem;color:var(--text-dim);margin-right:12px}
+.theme-toggle{width:40px;height:40px;border-radius:10px;border:1px solid var(--border);background:var(--surface);color:var(--text-secondary);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem;transition:all .25s}
+.theme-toggle:hover{background:var(--surface-hover);border-color:var(--accent);color:var(--accent)}
+.layout{max-width:1200px;margin:0 auto;padding:72px 2rem 4rem;display:flex;gap:2.5rem}
+.sidebar{width:var(--sidebar-width);flex-shrink:0;position:sticky;top:72px;height:calc(100vh - 88px);overflow-y:auto;padding:1rem 0}
+.sidebar::-webkit-scrollbar{width:3px}.sidebar::-webkit-scrollbar-track{background:transparent}.sidebar::-webkit-scrollbar-thumb{background:var(--border);border-radius:4px}
+.sidebar-nav{list-style:none}.sidebar-nav li{margin-bottom:2px}
+.sidebar-nav a{display:block;padding:6px 12px;font-size:.8rem;color:var(--text-secondary);text-decoration:none;border-radius:var(--radius-sm);border-left:2px solid transparent;transition:all .2s;line-height:1.5}
+.sidebar-nav a:hover{color:var(--accent);background:var(--accent-light)}
+.sidebar-nav a.active{color:var(--accent);border-left-color:var(--accent);background:var(--accent-light);font-weight:500}
+.sidebar-nav .nav-group{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--text-dim);padding:16px 12px 6px}
+.content{flex:1;min-width:0;max-width:var(--content-width)}
+.hero{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2.5rem;margin-bottom:2rem;box-shadow:var(--shadow-md);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--morandi-sand),var(--morandi-rose),var(--morandi-sage),var(--morandi-blue))}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:.72rem;font-weight:500;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);background:var(--accent-light);border:1px solid var(--accent-border);border-radius:999px;padding:4px 14px;margin-bottom:1.25rem}
+.hero h1{font-family:'Noto Serif SC',serif;font-size:clamp(1.6rem,3.5vw,2.2rem);font-weight:700;color:var(--heading);line-height:1.3;margin-bottom:.5rem}
+.hero-subtitle{font-size:1rem;color:var(--text-secondary);margin-bottom:1.5rem}
+.hero-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1rem;padding-top:1.5rem;border-top:1px solid var(--border)}
+.hero-stat{text-align:center}
+.hero-stat .label{font-size:.7rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.hero-stat .value{font-family:'JetBrains Mono',monospace;font-size:1.15rem;font-weight:600;color:var(--heading)}
+.hero-stat .change{font-size:.72rem;margin-top:2px}
+.change.up{color:var(--green)}.change.down{color:var(--red)}
+.verdict{background:linear-gradient(135deg,var(--surface),var(--bg-alt));border:1px solid var(--border-accent);border-radius:var(--radius-lg);padding:2rem;margin-bottom:2rem;box-shadow:var(--shadow-md);position:relative}
+.verdict::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--morandi-sand);border-radius:var(--radius-lg) var(--radius-lg) 0 0}
+.verdict-title{font-family:'Noto Serif SC',serif;font-size:1.15rem;font-weight:600;color:var(--accent);margin-bottom:1rem;display:flex;align-items:center;gap:8px}
+.verdict p{font-size:.92rem;line-height:1.8;color:var(--text)}.verdict strong{color:var(--heading)}
+.decision-summary{background:var(--surface);border:2px solid var(--morandi-sage);border-radius:var(--radius-lg);padding:1.5rem 2rem;margin-bottom:2rem;box-shadow:var(--shadow-md);display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1.25rem;align-items:center}
+.ds-item{text-align:center}
+.ds-item .ds-label{font-size:.68rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.ds-item .ds-value{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:700;color:var(--heading)}
+.ds-item .ds-note{font-size:.7rem;color:var(--text-secondary);margin-top:2px}
+.ds-item .ds-value.rating-buy{color:var(--green)}.ds-item .ds-value.rating-hold{color:var(--yellow)}
+.module{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:2rem;margin-bottom:1.5rem;box-shadow:var(--shadow-sm);transition:box-shadow .3s}
+.module:hover{box-shadow:var(--shadow-md)}
+.module-header{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;padding-bottom:1rem;border-bottom:1px solid var(--border)}
+.module-num{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;flex-shrink:0;font-family:'JetBrains Mono',monospace}
+.module-num.n1{background:rgba(201,169,160,.2);color:var(--morandi-rose)}
+.module-num.n2{background:rgba(163,176,160,.2);color:var(--morandi-sage)}
+.module-num.n3{background:rgba(196,168,130,.2);color:var(--morandi-sand)}
+.module-num.n4{background:rgba(158,176,188,.2);color:var(--morandi-blue)}
+.module-num.n5{background:rgba(176,160,176,.2);color:var(--morandi-mauve)}
+.module-num.n6{background:rgba(190,168,152,.2);color:var(--morandi-clay)}
+.module-num.n7{background:rgba(201,169,160,.2);color:var(--morandi-rose)}
+.module-num.n8{background:rgba(163,176,160,.2);color:var(--morandi-sage)}
+.module-num.n9{background:rgba(196,168,130,.2);color:var(--morandi-sand)}
+.module-num.n10{background:rgba(158,176,188,.2);color:var(--morandi-blue)}
+.module-num.n11{background:rgba(191,123,110,.15);color:var(--red)}
+.module-num.n12{background:rgba(196,168,130,.2);color:var(--morandi-sand)}
+.module h2{font-family:'Noto Serif SC',serif;font-size:1.2rem;font-weight:600;color:var(--heading)}
+.module h3{font-family:'Noto Serif SC',serif;font-size:1rem;font-weight:600;color:var(--heading);margin:1.5rem 0 .75rem}
+.module h3:first-of-type{margin-top:0}
+.module p,.module li{font-size:.88rem;line-height:1.8;color:var(--text)}
+.module ul,.module ol{padding-left:1.5rem;margin:.5rem 0}.module li{margin-bottom:.3rem}
+.module strong{color:var(--heading);font-weight:600}
+.table-wrapper{overflow-x:auto;margin:1rem 0;border-radius:var(--radius-sm);border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:.82rem;line-height:1.5}
+thead{background:var(--table-header-bg)}
+th{padding:10px 14px;font-weight:600;color:var(--heading);text-align:left;white-space:nowrap;border-bottom:2px solid var(--border);font-size:.78rem}
+td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top}
+tr:nth-child(even){background:var(--table-stripe)}tr:hover{background:var(--table-hover)}
+td:first-child{font-weight:500;color:var(--heading)}
+.num{font-family:'JetBrains Mono',monospace;font-size:.8rem;text-align:right}th.num{text-align:right}
+.callout{padding:1rem 1.25rem;border-radius:var(--radius-sm);margin:1rem 0;font-size:.85rem;line-height:1.7;border-left:3px solid}
+.callout.info{background:var(--blue-bg);border-color:var(--blue)}
+.callout.success{background:var(--green-bg);border-color:var(--green)}
+.callout.warning{background:var(--yellow-bg);border-color:var(--yellow)}
+.callout.danger{background:var(--red-bg);border-color:var(--red)}
+.callout-title{font-weight:600;color:var(--heading);margin-bottom:4px}
+.badge{display:inline-flex;align-items:center;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:600;letter-spacing:.02em}
+.badge.buy{background:var(--badge-buy-bg);color:var(--badge-buy-text)}
+.badge.sell{background:var(--badge-sell-bg);color:var(--badge-sell-text)}
+.badge.hold{background:var(--badge-hold-bg);color:var(--badge-hold-text)}
+.code-block{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-sm);padding:1rem 1.25rem;font-family:'JetBrains Mono',monospace;font-size:.8rem;line-height:1.7;overflow-x:auto;margin:1rem 0;color:var(--text)}
+.highlight-box{background:var(--accent-light);border:1px solid var(--accent-border);border-radius:var(--radius);padding:1.25rem;margin:1rem 0}
+.highlight-box .hl-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:600;margin-bottom:.5rem}
+.moat-item{display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)}
+.moat-item:last-child{border-bottom:none}
+.moat-label{flex:1;font-size:.85rem;font-weight:500;color:var(--heading)}
+.moat-rating{font-size:.72rem;font-weight:600;padding:2px 10px;border-radius:999px}
+.moat-rating.wide{background:var(--green-bg);color:var(--green)}
+.moat-rating.narrow{background:var(--yellow-bg);color:var(--yellow)}
+.moat-rating.none{background:var(--red-bg);color:var(--red)}
+.scorecard-grid{display:grid;grid-template-columns:1fr;gap:6px;margin:1rem 0}
+.score-row{display:flex;align-items:center;padding:8px 12px;border-radius:var(--radius-sm);background:var(--bg-alt);gap:12px}
+.score-row .criteria{flex:1;font-size:.82rem;color:var(--text)}
+.score-row .score{font-family:'JetBrains Mono',monospace;font-size:.82rem;font-weight:600;color:var(--accent);min-width:42px;text-align:center}
+.score-row .dots{display:flex;gap:4px}
+.score-row .dot{width:10px;height:10px;border-radius:50%;background:var(--border)}
+.score-row .dot.filled{background:var(--morandi-sand)}
+.grade-badge{display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:50%;font-family:'Noto Serif SC',serif;font-size:1.5rem;font-weight:700}
+.grade-badge.a{background:var(--green-bg);color:var(--green);border:2px solid var(--green)}
+.grade-badge.b{background:var(--blue-bg);color:var(--blue);border:2px solid var(--blue)}
+.grade-badge.c{background:var(--yellow-bg);color:var(--yellow);border:2px solid var(--yellow)}
+.decision-box{background:var(--surface);border:2px solid var(--green);border-radius:var(--radius-lg);padding:2rem;margin:1.5rem 0}
+.decision-header{display:flex;align-items:center;gap:16px;margin-bottom:1.5rem}
+.decision-rating{font-family:'Noto Serif SC',serif;font-size:1.2rem;font-weight:700;padding:8px 20px;border-radius:var(--radius);background:var(--green-bg);color:var(--green)}
+.decision-price{font-family:'JetBrains Mono',monospace}
+.decision-price .current{font-size:1.8rem;font-weight:700;color:var(--heading)}
+.decision-price .target{font-size:.82rem;color:var(--text-secondary)}
+.disclaimer{background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-top:2rem;font-size:.78rem;color:var(--text-dim);line-height:1.7}
+.disclaimer strong{color:var(--text-secondary)}
+.page-footer{text-align:center;padding:2rem 0;margin-top:2rem;border-top:1px solid var(--border);font-size:.75rem;color:var(--text-dim)}
+.page-footer a{color:var(--accent);text-decoration:none}.page-footer a:hover{text-decoration:underline}
+.back-to-top{position:fixed;bottom:2rem;right:2rem;width:42px;height:42px;border-radius:50%;background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow-md);color:var(--text-secondary);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.1rem;opacity:0;transform:translateY(10px);transition:all .3s;z-index:100}
+.back-to-top.visible{opacity:1;transform:translateY(0)}
+.back-to-top:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+@media(max-width:960px){.sidebar{display:none}.layout{padding:72px 1.25rem 3rem}.hero,.module{padding:1.5rem}}
+@media(max-width:600px){.layout{padding:64px 1rem 2rem}.hero{padding:1.25rem}.hero-stats{grid-template-columns:repeat(2,1fr)}.module{padding:1.25rem}.topbar-meta{display:none}th,td{padding:7px 10px;font-size:.75rem}.decision-summary{grid-template-columns:repeat(2,1fr)}}
+@media print{.topbar,.sidebar,.theme-toggle,.back-to-top{display:none!important}.layout{padding:0}.module{break-inside:avoid;box-shadow:none;border:1px solid #ddd}}
 </style>
 </head>
 <body>
 
-<!-- ════════════ Top Bar ════════════ -->
-<nav class="topbar">
-  <div class="topbar-inner">
-    <a href="#" class="topbar-brand">
-      <div class="logo">B</div>
-      <span>巴菲特神谕分析师</span>
-    </a>
-    <div class="topbar-actions">
-      <span class="topbar-meta">2026-04-08 | HKEX: 9896</span>
-      <button class="theme-toggle" id="themeToggle" title="切换主题" aria-label="Toggle theme">
-        <span id="themeIcon">&#9790;</span>
-      </button>
-    </div>
+<nav class="topbar"><div class="topbar-inner">
+  <a href="#" class="topbar-brand"><div class="logo">B</div><span>巴菲特神谕分析师</span></a>
+  <div class="topbar-actions">
+    <span class="topbar-meta">2026-04-21 | HKEX: 9896</span>
+    <button class="theme-toggle" id="themeToggle" title="切换主题" aria-label="Toggle theme"><span id="themeIcon">&#9790;</span></button>
   </div>
-</nav>
+</div></nav>
 
-<!-- ════════════ Main Layout ════════════ -->
 <div class="layout">
 
-  <!-- ──── Sidebar ──── -->
-  <aside class="sidebar">
-    <ul class="sidebar-nav" id="sidebarNav">
-      <li class="nav-group">概览</li>
-      <li><a href="#verdict">巴菲特裁决</a></li>
-      <li><a href="#decision-summary">决策摘要</a></li>
-      <li><a href="#overview">公司概览</a></li>
-      <li class="nav-group">基本面</li>
-      <li><a href="#management">管理层评估</a></li>
-      <li><a href="#business">商业模式</a></li>
-      <li><a href="#moat">经济护城河</a></li>
-      <li><a href="#financials">财务分析</a></li>
-      <li><a href="#earningscall">电话会分析</a></li>
-      <li class="nav-group">估值与市场</li>
-      <li><a href="#valuation">多模型估值</a></li>
-      <li><a href="#competition">竞争分析</a></li>
-      <li><a href="#technical">技术面</a></li>
-      <li class="nav-group">风险与决策</li>
-      <li><a href="#catalysts">增长催化剂</a></li>
-      <li><a href="#risk">风险矩阵</a></li>
-      <li><a href="#scorecard">巴菲特计分卡</a></li>
+<aside class="sidebar"><ul class="sidebar-nav" id="sidebarNav">
+  <li class="nav-group">概览</li>
+  <li><a href="#verdict">巴菲特裁决</a></li>
+  <li><a href="#summary">决策摘要</a></li>
+  <li><a href="#overview">公司概览</a></li>
+  <li class="nav-group">基本面</li>
+  <li><a href="#management">管理层评估</a></li>
+  <li><a href="#business">商业模式</a></li>
+  <li><a href="#moat">经济护城河</a></li>
+  <li><a href="#financials">财务分析</a></li>
+  <li><a href="#earningscall">电话会分析</a></li>
+  <li class="nav-group">估值与市场</li>
+  <li><a href="#valuation">多模型估值</a></li>
+  <li><a href="#competition">竞争分析</a></li>
+  <li><a href="#technical">技术面</a></li>
+  <li class="nav-group">风险与决策</li>
+  <li><a href="#catalysts">增长催化剂</a></li>
+  <li><a href="#risk">风险矩阵</a></li>
+  <li><a href="#scorecard">巴菲特计分卡</a></li>
+</ul></aside>
+
+<main class="content">
+
+<!-- Decision Summary -->
+<section class="decision-summary" id="summary">
+  <div class="ds-item"><div class="ds-label">巴菲特计分</div><div class="ds-value">21/36</div><div class="ds-note">C级 &middot; 一般</div></div>
+  <div class="ds-item"><div class="ds-label">投资评级</div><div class="ds-value rating-buy">买入</div><div class="ds-note">回调后估值合理</div></div>
+  <div class="ds-item"><div class="ds-label">12个月目标价</div><div class="ds-value">HK$40</div><div class="ds-note">独立估值中位数</div></div>
+  <div class="ds-item"><div class="ds-label">首仓买入价</div><div class="ds-value">HK$32</div><div class="ds-note">FV×80%</div></div>
+  <div class="ds-item"><div class="ds-label">回购规模</div><div class="ds-value">HK$18亿</div><div class="ds-note">2026.4到期</div></div>
+</section>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-badge">深度分析报告</div>
+  <h1>名创优品 9896 深度分析</h1>
+  <p class="hero-subtitle">全球IP零售龙头 · Q4收入+33%超指引 · 永辉投资拖累GAAP净利润腰斩</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="label">52周区间</div><div class="value">HK$30-52</div></div>
+    <div class="hero-stat"><div class="label">市值</div><div class="value">~HK$368亿</div></div>
+    <div class="hero-stat"><div class="label">营收(2025)</div><div class="value">RMB 214亿</div><div class="change up">+26.2%</div></div>
+    <div class="hero-stat"><div class="label">调整净利</div><div class="value">RMB 29亿</div><div class="change up">+6.5%</div></div>
+    <div class="hero-stat"><div class="label">P/E (调整)</div><div class="value">11.6x</div></div>
+    <div class="hero-stat"><div class="label">评级</div><div class="value" style="color:var(--green)">买入</div></div>
+  </div>
+</section>
+
+<!-- Verdict -->
+<section class="verdict" id="verdict">
+  <div class="verdict-title">巴菲特的裁决</div>
+  <p><strong>"叶国富做对了一件大事，做错了一件大事——但市场只看到了那件错事。"</strong> 做对的：MINISO本体在全球横扫——8,485家店、IP合作模式、海外+29.3%、TOP TOY翻倍、Q4收入超指引上限+33%。做错的：用RMB 60多亿"蛇吞象"收购永辉超市29.4%股权，过去两年累计权益法亏损分摊超RMB 16亿，是2025年GAAP净利润"腰斩"54%的主因。</p>
+  <p style="margin-top:.75rem">市场把这两件事打包评价，导致股价从HK$52跌到HK$30——回撤42%。但<strong>剥离永辉的会计噪音后，调整净利润仍然+6.5%，调整运营利润+7.9%</strong>。当下P/E（调整）仅11.6x，公司同时执行HK$18亿回购计划（截至7月已用HK$3亿）。这不是叶国富的"完美故事"，但对于愿意"剥洋葱"的投资者，是<strong>把一家增长20%+的全球零售公司用12倍PE买回家的窗口</strong>。</p>
+</section>
+
+<!-- Module 1 -->
+<section class="module" id="overview">
+  <div class="module-header"><div class="module-num n1">01</div><h2>公司概览与背景</h2></div>
+  <div class="table-wrapper"><table><tbody>
+    <tr><td>代码 / 交易所</td><td>9896.HK / 香港联交所主板（同时MNSO在NYSE双重上市）</td></tr>
+    <tr><td>公司全称</td><td>MINISO Group Holding Limited 名创优品集团</td></tr>
+    <tr><td>市值</td><td>~HK$368亿 (~US$47亿)</td></tr>
+    <tr><td>行业</td><td>生活方式零售 / IP消费品 / 潮玩</td></tr>
+    <tr><td>成立时间</td><td>2013年（叶国富在广州创立）</td></tr>
+    <tr><td>香港上市</td><td>2022年7月（双重主要上市）</td></tr>
+    <tr><td>美股上市</td><td>2020年10月（NYSE: MNSO）</td></tr>
+    <tr><td>总部</td><td>广州</td></tr>
+    <tr><td>员工</td><td>~10,000人</td></tr>
+    <tr><td>52周区间</td><td>HK$29.96 — HK$51.95</td></tr>
+  </tbody></table></div>
+
+  <h3>发展历程</h3>
+  <ul>
+    <li><strong>2013年</strong> — 叶国富与日本设计师三宅顺也共同创立MINISO，主打"日式美学+性价比"</li>
+    <li><strong>2015-2018年</strong> — 中国市场跑马圈地，门店突破2,000家</li>
+    <li><strong>2019年</strong> — 出海战略加速，进入美国/印度/中东等</li>
+    <li><strong>2020年</strong> — 纽交所上市（MNSO）</li>
+    <li><strong>2020年</strong> — 推出潮玩品牌TOP TOY，对标泡泡玛特</li>
+    <li><strong>2022年</strong> — 香港双重主要上市，"超级品牌+IP+全球化"战略升级</li>
+    <li><strong>2024年9月</strong> — 宣布以RMB 62.7亿收购永辉超市29.4%股权（市场震惊）</li>
+    <li><strong>2025年</strong> — 全球门店突破8,485家，调整净利润 RMB 29亿(+6.5%)，但永辉拖累GAAP净利-54%</li>
+    <li><strong>2026年</strong> — Q1指引收入+25%以上；TOP TOY启动分拆上市评估</li>
+  </ul>
+
+  <h3>股权结构</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>股东</th><th class="num">持股比例</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>叶国富 (创始人)</td><td class="num">~63%</td><td>实际控制人，超级投票权架构</td></tr>
+      <tr><td>腾讯</td><td class="num">~5%</td><td>战略股东</td></tr>
+      <tr><td>高瓴资本</td><td class="num">~5%</td><td>早期投资者</td></tr>
+      <tr><td>公众/机构</td><td class="num">~27%</td><td>港股+ADR双轨流通</td></tr>
+    </tbody>
+  </table></div>
+  <div class="callout warning">
+    <div class="callout-title">超级投票权架构</div>
+    叶国富通过双层股权结构掌握公司绝对控制权——这意味着永辉收购等"高风险大笔决策"<strong>无需股东大会同意即可推进</strong>。这是一把双刃剑：好处是创始人长期主义不被市场短期意见左右；坏处是<strong>缺乏纠错机制</strong>，永辉案例就是典型。
+  </div>
+</section>
+
+<!-- Module 2 -->
+<section class="module" id="management">
+  <div class="module-header"><div class="module-num n2">02</div><h2>管理层评估</h2></div>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>姓名</th><th>职位</th><th>背景</th></tr></thead>
+    <tbody>
+      <tr><td>叶国富</td><td>创始人/董事长/CEO</td><td>湖北人，零售行业老兵，2003年创立"哎呀呀"，2013年创立MINISO</td></tr>
+      <tr><td>张赛音</td><td>CFO</td><td>财务背景，加入MINISO 5年，处理境内外双重上市与永辉融资</td></tr>
+      <tr><td>三宅顺也</td><td>联合创始人/首席设计师</td><td>日本籍，奠定MINISO日式美学基调</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>巴菲特测试：他们是主人翁型经理人吗？</h3>
+  <p>叶国富是<strong>典型的"主人翁创始人"——持股63%，公司就是他的命</strong>。这种管理层在巴菲特眼里得高分，因为利益完全对齐。但他也展现了创始人型CEO的两面性：</p>
+  <p style="margin-top:.5rem"><strong>正面</strong>：愿意为长期投入（IP合作、海外扩张、大店升级）；亲力亲为做产品；2025年启动HK$18亿回购显示对自家股票的信心。</p>
+  <p style="margin-top:.5rem"><strong>负面</strong>：<strong>永辉收购就是"创始人独裁的灾难案例"</strong>——花RMB 62.7亿买入一家正在亏损扩大的传统超市29.4%股权，至今分摊亏损RMB 16亿+。叶国富的逻辑是"用胖东来模式改造永辉"，但执行结果远低于预期。</p>
+
+  <div class="table-wrapper" style="margin-top:1rem"><table>
+    <thead><tr><th>维度</th><th>评估</th><th class="num">评分</th></tr></thead>
+    <tbody>
+      <tr><td>资本配置能力</td><td>MINISO本体扩张+IP战略=A；永辉收购=F；2025年HK$18亿回购=B+。混合分B-。</td><td class="num">B-</td></tr>
+      <tr><td>坦诚程度</td><td>对永辉投资损失披露完整，但电话会上避谈"是否后悔"，沟通有美化倾向。</td><td class="num">B-</td></tr>
+      <tr><td>利益绑定</td><td>叶国富持股63%，利益与小股东高度一致。但创始人独断风险高。</td><td class="num">A-</td></tr>
+      <tr><td>历史记录</td><td>2013至今从0做到全球8,485家店；但永辉是重大判断失误，未来还需观察是否吸取教训。</td><td class="num">B</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<!-- Module 3 -->
+<section class="module" id="business">
+  <div class="module-header"><div class="module-num n3">03</div><h2>商业模式深度解析</h2></div>
+
+  <div class="callout info"><div class="callout-title">巴菲特的"一句话测试"</div>
+    名创优品设计/采购/分销低价IP生活用品（迪士尼、三丽鸥、漫威等授权），通过自营+加盟模式在全球8,485家门店销售，赚取设计溢价+规模采购差价。
+  </div>
+
+  <h3>FY2025收入拆分</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>业务板块</th><th class="num">收入</th><th class="num">YoY</th><th>关键洞察</th></tr></thead>
+    <tbody>
+      <tr><td>MINISO 中国</td><td class="num">RMB 89亿</td><td class="num">~+10%</td><td>大店升级+同店回暖，门店4,500+</td></tr>
+      <tr><td>MINISO 海外</td><td class="num">RMB 84亿</td><td class="num">+29.3%</td><td>美国+东南亚双引擎，门店3,651家</td></tr>
+      <tr><td>TOP TOY (潮玩)</td><td class="num">RMB 19.2亿</td><td class="num">+94.8%</td><td>对标泡泡玛特，独立IP孵化中</td></tr>
+      <tr><td>其他</td><td class="num">RMB 22亿</td><td class="num">~+15%</td><td>电商+批发+特许权使用费</td></tr>
+      <tr><td><strong>合计</strong></td><td class="num"><strong>RMB 214.4亿</strong></td><td class="num"><strong>+26.2%</strong></td><td></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>渠道模式</h3>
+  <div class="code-block">国内: 加盟制 (~92% MINISO中国门店)
+        + 自营旗舰店（北京三里屯、上海南京路）
+海外: 直营 (美国/英国/法国/印度) + 代理 (中东/南美等)
+        美国直营是2024-2025最强劲的增长点</div>
+
+  <h3>单位经济模型</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>指标</th><th class="num">FY2024</th><th class="num">FY2025</th><th>趋势</th></tr></thead>
+    <tbody>
+      <tr><td>毛利率</td><td class="num">42.1%</td><td class="num">43.4%</td><td>持续提升（IP+海外占比+SKU优化）</td></tr>
+      <tr><td>调整运营利润率</td><td class="num">19.0%</td><td class="num">17.1%</td><td>因海外大店投入下降，但绝对额仍增长</td></tr>
+      <tr><td>调整净利率</td><td class="num">16.0%</td><td class="num">13.5%</td><td>下降，反映海外扩张成本+TOP TOY投入</td></tr>
+      <tr><td>同店销售（中国）</td><td class="num">-3%</td><td class="num">+5%</td><td>2026 Q1指引高单位数增长</td></tr>
+      <tr><td>同店销售（美国）</td><td class="num">+5%</td><td class="num">+15%</td><td>2026 Q1预计+20%</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>IP战略——核心差异化</h3>
+  <p>MINISO与传统平价零售（无印良品、宜家）的最大区别是<strong>IP产品占比60%+</strong>——通过与迪士尼、三丽鸥（Hello Kitty）、漫威、宝可梦、哈利波特、芭比等150+ IP合作，把"低价货架"变成"IP收集体验"。</p>
+  <p style="margin-top:.5rem">这条战略的<strong>关键证据</strong>：2024年三丽鸥联名系列在全球热销，毛利率比普通商品高10-15个百分点；TOP TOY围绕《哪吒》《葫芦娃》等本土IP的热销带动+95%增速。</p>
+</section>
+
+<!-- Module 4 -->
+<section class="module" id="moat">
+  <div class="module-header"><div class="module-num n4">04</div><h2>经济护城河分析</h2></div>
+
+  <div style="margin:1rem 0">
+    <div class="moat-item"><span class="moat-label">1. 网络效应</span><span class="moat-rating none">无</span></div>
+    <div class="moat-item"><span class="moat-label">2. 转换成本</span><span class="moat-rating none">无</span></div>
+    <div class="moat-item"><span class="moat-label">3. 成本优势 (规模采购+1100供应商)</span><span class="moat-rating narrow">窄</span></div>
+    <div class="moat-item"><span class="moat-label">4. 无形资产 (IP合作矩阵+品牌认知)</span><span class="moat-rating narrow">窄</span></div>
+    <div class="moat-item"><span class="moat-label">5. 有效规模 (8,485家全球门店密度)</span><span class="moat-rating narrow">窄</span></div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="hl-label">总体护城河评级：窄护城河（趋势：稳定→加宽中）</div>
+    <p style="margin-top:.5rem">名创优品的护城河来自<strong>"IP合作权+全球门店密度+设计能力"三位一体</strong>。单独任何一项都不致命，组合起来形成竞争壁垒。</p>
+    <p style="margin-top:.5rem"><strong>护城河加宽的证据</strong>：(1) IP合作池从2020年30+扩展到2025年150+，新进入者无法复制；(2) 全球8,485家门店带来的规模采购成本优势越来越显著；(3) TOP TOY开辟潮玩第二曲线，进一步分散单一品牌风险。</p>
+    <p style="margin-top:.5rem"><strong>侵蚀风险</strong>：(1) IP授权方（迪士尼等）有跳过MINISO直接做自营店的可能；(2) 中国本土"潮玩+生活方式"竞品（如KKV、九木杂物社、酷乐潮玩）正在加速；(3) 海外亚马逊等线上渠道分流。</p>
+  </div>
+
+  <div class="callout warning">
+    <div class="callout-title">关键问题：10年后这条护城河会更宽还是更窄？</div>
+    <strong>更宽的概率略高</strong>。原因：海外市场仍处早期渗透，欧美/东南亚还有2-3倍开店空间；TOP TOY独立分拆若成功将释放第二增长曲线价值。但<strong>前提是不再有"永辉式"误判</strong>。
+  </div>
+</section>
+
+<!-- Module 5 -->
+<section class="module" id="financials">
+  <div class="module-header"><div class="module-num n5">05</div><h2>财务深度分析</h2></div>
+
+  <h3>核心业绩趋势 (RMB)</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>指标</th><th class="num">2021</th><th class="num">2022</th><th class="num">2023</th><th class="num">2024</th><th class="num">2025</th></tr></thead>
+    <tbody>
+      <tr><td>营业收入 (亿)</td><td class="num">90.7</td><td class="num">100.9</td><td class="num">138.4</td><td class="num">169.9</td><td class="num">214.4</td></tr>
+      <tr><td>收入增速</td><td class="num">+1%</td><td class="num">+11%</td><td class="num">+37%</td><td class="num">+22.8%</td><td class="num">+26.2%</td></tr>
+      <tr><td>毛利率</td><td class="num">26.8%</td><td class="num">30.4%</td><td class="num">38.7%</td><td class="num">42.1%</td><td class="num">43.4%</td></tr>
+      <tr><td>调整净利润 (亿)</td><td class="num">7.3</td><td class="num">6.4</td><td class="num">17.6</td><td class="num">27.2</td><td class="num">29.0</td></tr>
+      <tr><td>调整净利率</td><td class="num">8.1%</td><td class="num">6.4%</td><td class="num">12.7%</td><td class="num">16.0%</td><td class="num">13.5%</td></tr>
+      <tr><td>GAAP净利润 (亿)</td><td class="num">3.2</td><td class="num">7.2</td><td class="num">17.7</td><td class="num">26.2</td><td class="num">12.05</td></tr>
+      <tr><td>GAAP增速</td><td class="num">-13%</td><td class="num">+125%</td><td class="num">+146%</td><td class="num">+48%</td><td class="num">-54%</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="callout danger">
+    <div class="callout-title">2025 GAAP-Adj差距RMB 17亿，永辉是主因</div>
+    <p style="margin-top:.5rem">2025年调整净利润 vs GAAP净利润差额RMB 17亿来自：</p>
+    <ul style="margin-top:.5rem;margin-bottom:0">
+      <li><strong>永辉超市权益法投资亏损</strong>：RMB 8.13亿（最大单项）</li>
+      <li><strong>股权激励费用 (SBC)</strong>：RMB 3.68亿</li>
+      <li><strong>TOP TOY可赎回优先股公允价值变动</strong>：RMB 1.58亿</li>
+      <li><strong>可转债利息（含1.73亿非现金）</strong>：RMB 1.92亿</li>
+      <li><strong>其他一次性</strong>：~RMB 1.7亿</li>
     </ul>
-  </aside>
+    <p style="margin-top:.5rem">其中真正影响"现金流的"只有永辉权益法亏损（且实为账面亏损）+部分SBC。<strong>真实现金创造能力仍按调整净利润RMB 29亿衡量</strong>。</p>
+  </div>
 
-  <!-- ──── Content ──── -->
-  <main class="content">
+  <h3>季度趋势 (FY2025)</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>季度</th><th class="num">收入(亿)</th><th class="num">YoY</th><th class="num">毛利率</th><th class="num">调整净利(亿)</th><th class="num">YoY</th></tr></thead>
+    <tbody>
+      <tr><td>Q1 2025</td><td class="num">37.0</td><td class="num">+18.9%</td><td class="num">44.0%</td><td class="num">5.9</td><td class="num">+15%</td></tr>
+      <tr><td>Q2 2025</td><td class="num">49.7</td><td class="num">+22.5%</td><td class="num">43.0%</td><td class="num">7.6</td><td class="num">-12%</td></tr>
+      <tr><td>Q3 2025</td><td class="num">62.0</td><td class="num">+27.5%</td><td class="num">43.4%</td><td class="num">7.0</td><td class="num">+0%</td></tr>
+      <tr><td>Q4 2025</td><td class="num">62.5</td><td class="num">+33.0%</td><td class="num">43.6%</td><td class="num">8.5</td><td class="num">+8%</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:.82rem;color:var(--text-secondary)">Q4收入加速至+33%超指引上限25-30%，调整净利率回升至13.6%，环比改善明显。Q2-Q3的利润率压力主要来自海外大店升级费用前置。</p>
 
-    <!-- ══ Hero ══ -->
-    <section class="hero" id="hero">
-      <div class="hero-badge">深度分析报告</div>
-      <h1>名创优品 MINISO Group</h1>
-      <p class="hero-subtitle">融合巴菲特投资哲学与现代多维分析框架的机构级深度研究</p>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <div class="label">股价</div>
-          <div class="value">HK$32.04</div>
-          <div class="change down">52周: $27-$52</div>
-        </div>
-        <div class="hero-stat">
-          <div class="label">市值</div>
-          <div class="value">HK$388亿</div>
-        </div>
-        <div class="hero-stat">
-          <div class="label">PE (调整后)</div>
-          <div class="value">12.2x</div>
-          <div class="change down">报告PE 29x</div>
-        </div>
-        <div class="hero-stat">
-          <div class="label">毛利率</div>
-          <div class="value">45.0%</div>
-          <div class="change up">持续提升中</div>
-        </div>
-        <div class="hero-stat">
-          <div class="label">门店</div>
-          <div class="value">8,485家</div>
-          <div class="change up">全球111国</div>
-        </div>
-        <div class="hero-stat">
-          <div class="label">评级</div>
-          <div class="value" style="color:var(--green)">买入</div>
-        </div>
+  <h3>资产负债健康度（独立评估）</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>指标</th><th class="num">2024</th><th class="num">2025</th><th>评估</th></tr></thead>
+    <tbody>
+      <tr><td>现金及短期投资</td><td class="num">RMB 76亿</td><td class="num">RMB 50亿</td><td>充足，但因永辉收购+回购下降</td></tr>
+      <tr><td>有息负债</td><td class="num">RMB 12亿</td><td class="num">RMB 65亿</td><td>大幅上升（含可转债+永辉收购贷款）</td></tr>
+      <tr><td>净现金/(净负债)</td><td class="num">+RMB 64亿</td><td class="num">-RMB 15亿</td><td><strong>从净现金转为净负债，重大变化</strong></td></tr>
+      <tr><td>资产负债率</td><td class="num">~35%</td><td class="num">~50%</td><td>因杠杆上升</td></tr>
+      <tr><td>流动比率</td><td class="num">2.1</td><td class="num">1.5</td><td>仍健康</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>现金流质量</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>指标</th><th class="num">2023</th><th class="num">2024</th><th class="num">2025</th></tr></thead>
+    <tbody>
+      <tr><td>经营活动现金流</td><td class="num">RMB 21亿</td><td class="num">RMB 30亿</td><td class="num">RMB 32亿</td></tr>
+      <tr><td>资本开支</td><td class="num">-RMB 5亿</td><td class="num">-RMB 8亿</td><td class="num">-RMB 12亿</td></tr>
+      <tr><td>自由现金流</td><td class="num">RMB 16亿</td><td class="num">RMB 22亿</td><td class="num">RMB 20亿</td></tr>
+      <tr><td>FCF/调整净利润</td><td class="num">91%</td><td class="num">81%</td><td class="num">69%</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:.82rem;color:var(--text-secondary)">FCF转化率下降至69%反映海外大店投入加大，但绝对规模仍健康。永辉投资的RMB 62.7亿是2024年一次性投资，不计入运营FCF。</p>
+
+  <h3>所有者盈余计算</h3>
+  <div class="code-block">所有者盈余 = 调整净利润 + D&A + SBC - 维护性资本开支 ± 营运资金
+        = RMB 29亿 + 4亿 + 3.68亿 - 6亿 ± 0
+        ≈ RMB 30.7亿 (FY2025)
+
+所有者盈余收益率 @HK$36.8B市值 = 30.7×1.10/368 = 9.2%
+对比10年期国债 ~4.5% → 超额2倍以上, 巴菲特门槛通过</div>
+</section>
+
+<!-- Module 6 -->
+<section class="module" id="earningscall">
+  <div class="module-header"><div class="module-num n6">06</div><h2>电话会分析</h2></div>
+
+  <h3>2025年报电话会（2026-03-28）要点</h3>
+  <ul>
+    <li><strong>叶国富开场</strong>：强调"2025是MINISO品牌升级元年"——大店战略+IP深化+海外加速</li>
+    <li><strong>永辉表态</strong>：承认"短期亏损超预期"，但坚持"胖东来模式改造"长期逻辑；2026年永辉自身减亏目标明确</li>
+    <li><strong>2026指引</strong>：Q1收入增速≥25%，全年预计与2025持平或略好</li>
+    <li><strong>美国市场</strong>：2026年US GMV +50% YoY (1-2月数据)，同店+20%；启动SKU精简提升毛利率</li>
+    <li><strong>TOP TOY</strong>：评估独立分拆上市，目标2026下半年提交申请</li>
+    <li><strong>分红</strong>：维持50%分红率（基于调整净利润），2025年股息约RMB 14.5亿</li>
+    <li><strong>回购</strong>：HK$18亿回购已用约HK$3亿，"市场低估时会加速执行"</li>
+  </ul>
+
+  <h3>2025年中期电话会（2025-08-21）要点</h3>
+  <ul>
+    <li>承认Q2利润率承压来自"美国大店投入前置"</li>
+    <li>下半年指引：海外加速+国内同店改善</li>
+    <li>永辉首次公开承认"恢复时间长于预期"</li>
+  </ul>
+
+  <h3>2025年Q1电话会（2025-05-21）要点</h3>
+  <ul>
+    <li>叶国富对永辉收购"信心满满"，强调"看十年不看一年"</li>
+    <li>当时未充分预警永辉亏损扩大幅度</li>
+  </ul>
+
+  <div class="callout warning">
+    <div class="callout-title">措辞分析：管理层态度的演变</div>
+    叶国富对永辉的语气从Q1的<strong>"完全自信"</strong> → 中期的<strong>"承认压力"</strong> → 年报的<strong>"承认超预期亏损"</strong>。这种递进式承认是诚实的，但也说明<strong>初始判断过于乐观</strong>。投资者应注意：他可能仍在低估问题严重程度。
+  </div>
+</section>
+
+<!-- Module 7 -->
+<section class="module" id="valuation">
+  <div class="module-header"><div class="module-num n7">07</div><h2>多模型估值（8种方法）</h2></div>
+
+  <div class="callout warning">
+    <div class="callout-title">独立估值原则</div>
+    所有估值不参考当前股价。基于FY2025实际数据+前瞻趋势（Q4 +33%加速、2026 Q1指引≥25%、海外+50%）独立推导。重点采用"调整净利润"作为运营盈利能力代理。
+  </div>
+
+  <h3>关键输入参数</h3>
+  <div class="code-block">总股本: ~1,228M股 (含H股+ADR)
+FY2025调整净利润: RMB 29亿
+FY2025 GAAP净利润: RMB 12亿
+FY2025 调整EPS: RMB 2.36 = HK$2.60
+FY2025 GAAP EPS: RMB 0.98 = HK$1.08
+2026E调整净利润: RMB 33-35亿 (按+15%推算，保守取33亿)
+2026E调整EPS: HK$2.95-3.10
+WACC: 9.5%
+永续增长率g: 3%</div>
+
+  <h3>法1：相对估值 (P/E同业对标)</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>公司</th><th class="num">收入增速</th><th class="num">P/E (调整)</th><th class="num">P/S</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>名创优品 9896</td><td>+26%</td><td class="num">11.6x</td><td class="num">1.6x</td><td>当前估值（含永辉GAAP损失）</td></tr>
+      <tr><td>泡泡玛特 9992</td><td>+50%</td><td class="num">35-40x</td><td class="num">8-10x</td><td>纯IP潮玩，溢价明显</td></tr>
+      <tr><td>无印良品 7453</td><td>+8%</td><td class="num">22x</td><td class="num">1.5x</td><td>日本生活方式零售</td></tr>
+      <tr><td>Five Below (FIVE)</td><td>+18%</td><td class="num">28x</td><td class="num">1.5x</td><td>美国低价杂货龙头</td></tr>
+      <tr><td>Dollar Tree (DLTR)</td><td>+5%</td><td class="num">20x</td><td class="num">0.9x</td><td>美国低价超市</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>合理调整P/E 14-18x</strong>（介于Dollar Tree的20x与考虑到中国折价的15x之间）。在2026E调整EPS HK$3.00基础上：<strong>合理价 HK$42 - HK$54，中位数 HK$48</strong></p>
+
+  <h3>法2：DCF (现金流折现)</h3>
+  <div class="code-block">基准情景:
+  2026E所有者盈余 RMB 35亿
+  增速假设: 25%/20%/15%/12%/8% (5年) → 永续3%
+  WACC 9.5%
+  5年现值: RMB 165亿
+  终值现值: RMB 280亿 (终值倍数12x)
+  企业价值: RMB 445亿 = HK$489亿
+  减净负债 -HK$16亿 + 永辉残值HK$15亿
+  股权价值: HK$488亿
+  每股: HK$39.7</div>
+
+  <div class="table-wrapper"><table>
+    <thead><tr><th>情景</th><th class="num">每股价值</th><th>关键假设</th></tr></thead>
+    <tbody>
+      <tr><td>悲观</td><td class="num">HK$28</td><td>2026增速12%, 永辉持续年损RMB 8亿</td></tr>
+      <tr><td>基准</td><td class="num">HK$40</td><td>2026增速20%, 永辉减亏一半</td></tr>
+      <tr><td>乐观</td><td class="num">HK$55</td><td>2026增速25%+, 永辉2027扭亏, TOP TOY分拆释放</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>法3：所有者盈余收益率（巴菲特偏好）</h3>
+  <div class="code-block">所有者盈余 RMB 30.7亿 = HK$33.8亿
+当前市值 HK$368亿
+所有者盈余收益率 = 9.2%
+对比10年期国债 4.5% → 超额收益 4.7个百分点
+对比巴菲特"2倍长债收益率"门槛 (9%) → 通过</div>
+  <p><strong>合理估值上限：所有者盈余 / 7% = HK$483亿 = HK$39.3/股</strong></p>
+
+  <h3>法4：PEG比率</h3>
+  <div class="code-block">P/E (forward 调整) ≈ 36 / 3.0 = 12x (按现价HK$36推算)
+未来3年净利润CAGR 预期 = 15-20%
+PEG = 12 / 17.5 = 0.69 (便宜区间, &lt;1)</div>
+
+  <h3>法5：DDM (股利折现模型)</h3>
+  <div class="code-block">2025年股息预期 RMB 14.5亿 / 1,228M股 = RMB 1.18/股 = HK$1.30
+分红率 50%
+增长率 g = 8% (中长期保守)
+股权成本 r = 10%
+P = 1.30×1.08/(0.10-0.08) = HK$70.2 (DDM对成长股偏高估)
+取保守 r=11%, g=7%: P = 1.30×1.07/0.04 = HK$34.8</div>
+  <p><strong>DDM估值 HK$35-50（成长股不适用，仅作参考）</strong></p>
+
+  <h3>法6：EV/EBITDA</h3>
+  <div class="code-block">2025年调整EBITDA = RMB 36.7亿运营利润 + 4亿D&A = RMB 40.7亿 = HK$45亿
+合理EV/EBITDA倍数: 12-15x (零售+IP混合)
+合理EV: HK$540 - HK$675亿
+减净负债HK$16亿 + 永辉残值HK$15亿
+合理股权价值: HK$539 - HK$674亿
+合理每股: HK$44 - HK$55</div>
+
+  <h3>法7：反向DCF</h3>
+  <div class="code-block">当前市值 HK$368亿隐含假设:
+  - 2026E所有者盈余 HK$33.8亿
+  - WACC 9.5%, g终值 3%
+  - 解出未来5年增速 → 仅~6% (远低于历史25%+)
+市场pricing in的是"永辉持续拖累+MINISO本体减速"双重悲观情景</div>
+
+  <h3>法8：SOTP (分部加总)</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>分部</th><th class="num">2026E利润</th><th>估值倍数</th><th class="num">价值 (HK$亿)</th></tr></thead>
+    <tbody>
+      <tr><td>MINISO 中国</td><td class="num">RMB 13亿</td><td>12x P/E</td><td class="num">172</td></tr>
+      <tr><td>MINISO 海外</td><td class="num">RMB 14亿</td><td>18x P/E (高增速)</td><td class="num">277</td></tr>
+      <tr><td>TOP TOY (分拆潜力)</td><td class="num">RMB 4亿</td><td>25x P/E (潮玩溢价)</td><td class="num">110</td></tr>
+      <tr><td>永辉29.4%股权</td><td class="num">市值法</td><td>5亿RMB×29.4%</td><td class="num">15</td></tr>
+      <tr><td>净现金/(负债)</td><td colspan="2"></td><td class="num">-16</td></tr>
+      <tr><td><strong>SOTP合计</strong></td><td colspan="2"></td><td class="num"><strong>558</strong></td></tr>
+      <tr><td><strong>每股</strong></td><td colspan="2"></td><td class="num"><strong>HK$45.4</strong></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>估值汇总</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>方法</th><th class="num">下限</th><th class="num">中位数</th><th class="num">上限</th><th class="num">权重</th></tr></thead>
+    <tbody>
+      <tr><td>相对P/E同业对标</td><td class="num">HK$42</td><td class="num">HK$48</td><td class="num">HK$54</td><td class="num">20%</td></tr>
+      <tr><td>DCF三情景</td><td class="num">HK$28</td><td class="num">HK$40</td><td class="num">HK$55</td><td class="num">20%</td></tr>
+      <tr><td>所有者盈余法</td><td class="num">HK$32</td><td class="num">HK$39</td><td class="num">HK$48</td><td class="num">15%</td></tr>
+      <tr><td>EV/EBITDA</td><td class="num">HK$44</td><td class="num">HK$50</td><td class="num">HK$55</td><td class="num">15%</td></tr>
+      <tr><td>SOTP</td><td class="num">HK$38</td><td class="num">HK$45</td><td class="num">HK$52</td><td class="num">20%</td></tr>
+      <tr><td>DDM (参考)</td><td class="num">HK$35</td><td class="num">HK$42</td><td class="num">HK$50</td><td class="num">10%</td></tr>
+      <tr><td><strong>加权独立估值</strong></td><td class="num"><strong>HK$36</strong></td><td class="num"><strong>HK$40</strong></td><td class="num"><strong>HK$50</strong></td><td class="num">100%</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="highlight-box">
+    <div class="hl-label">独立估值结论</div>
+    <p style="margin-top:.5rem">名创优品独立估值中位数 <strong>HK$40/股</strong>，区间 HK$36 - HK$50。当前股价 HK$30.18 较独立估值中位数有 <strong>约25% 折让</strong>，提供初步安全边际。</p>
+  </div>
+</section>
+
+<!-- Module 8 -->
+<section class="module" id="competition">
+  <div class="module-header"><div class="module-num n8">08</div><h2>竞争与行业分析</h2></div>
+
+  <h3>核心竞争对手对比</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>公司</th><th class="num">2025收入</th><th class="num">收入增速</th><th class="num">毛利率</th><th class="num">门店数</th><th>定位</th></tr></thead>
+    <tbody>
+      <tr><td>名创优品 9896</td><td class="num">RMB 214亿</td><td class="num">+26%</td><td class="num">43.4%</td><td class="num">8,485</td><td>IP生活方式</td></tr>
+      <tr><td>泡泡玛特 9992</td><td class="num">RMB 90亿</td><td class="num">+50%</td><td class="num">63%</td><td class="num">~400</td><td>纯IP潮玩</td></tr>
+      <tr><td>无印良品 (中国)</td><td class="num">RMB 50亿+</td><td class="num">+5%</td><td class="num">~38%</td><td class="num">~370</td><td>日式生活方式</td></tr>
+      <tr><td>KKV / X11</td><td class="num">~RMB 50亿</td><td class="num">+15%</td><td class="num">~40%</td><td class="num">~700</td><td>潮流杂货</td></tr>
+      <tr><td>九木杂物社</td><td class="num">~RMB 30亿</td><td class="num">+20%</td><td class="num">~38%</td><td class="num">~700</td><td>晨光集团子品牌</td></tr>
+      <tr><td>Daiso (大创)</td><td class="num">~JPY 5500亿</td><td class="num">+10%</td><td class="num">~40%</td><td class="num">~7,000</td><td>日本100元店</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>波特五力分析</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>维度</th><th class="num">强度</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>上游议价力（中国/东南亚供应商）</td><td class="num">弱</td><td>1100+供应商分散，MINISO议价能力强</td></tr>
+      <tr><td>下游议价力（终端消费者）</td><td class="num">中</td><td>低单价+冲动消费，价格敏感度有限</td></tr>
+      <tr><td>替代威胁（电商+潮玩集合店）</td><td class="num">中-强</td><td>淘宝/拼多多/抖音电商分流；IP潮玩多元竞争</td></tr>
+      <tr><td>新进入者威胁</td><td class="num">中</td><td>开店容易但IP合作+品牌建立需多年</td></tr>
+      <tr><td>行业内竞争</td><td class="num">强</td><td>泡泡玛特/KKV/九木+海外Five Below</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>差异化优势</h3>
+  <ul>
+    <li><strong>IP合作矩阵</strong>：150+ 全球IP独家/优先合作权——这是新进入者最难复制的资产</li>
+    <li><strong>全球门店网络</strong>：8,485家覆盖100+国家，规模采购优势 + 品牌全球认知</li>
+    <li><strong>设计能力</strong>：联合创始人三宅顺也奠定的"日式美学"基因</li>
+    <li><strong>柔性供应链</strong>：1,100+ 供应商 + ODM设计能力，新品上架周期7天</li>
+  </ul>
+
+  <div class="callout danger">
+    <div class="callout-title">颠覆风险：什么可能让这个行业变得无关紧要？</div>
+    <ul style="margin-top:.5rem;margin-bottom:0">
+      <li>抖音/TikTok电商导致"线下IP冲动消费"被线上即时满足完全替代</li>
+      <li>迪士尼/三丽鸥决定收回授权自营全球门店（不大概率，但每年合同续签是变量）</li>
+      <li>Z世代对"低价IP产品"审美疲劳，转向更小众的设计师品牌</li>
+      <li>美国关税政策变化，导致中国制造IP产品成本上升</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Module 9 -->
+<section class="module" id="technical">
+  <div class="module-header"><div class="module-num n9">09</div><h2>技术面与K线分析</h2></div>
+
+  <div class="callout warning">
+    <div class="callout-title">巴菲特从不使用技术分析</div>
+    本节作为补充供交易型投资者参考，权重远低于基本面。
+  </div>
+
+  <h3>趋势与价格结构</h3>
+  <ul>
+    <li><strong>长期趋势（周线）</strong>：2024年9月触及HK$52高点后开始下行，2025年Q2永辉投资公告后加速下跌</li>
+    <li><strong>中期趋势（日线）</strong>：HK$30-35区间盘整4个月，5月/3月两次试破HK$30均守住</li>
+    <li><strong>关键支撑</strong>：HK$30（心理整数+52周低位）、HK$28（2024年初部分散户成本区）</li>
+    <li><strong>关键阻力</strong>：HK$36（200日均线）、HK$42（2025年Q3反弹高点）、HK$52（2024年峰值）</li>
+  </ul>
+
+  <h3>技术指标</h3>
+  <div class="table-wrapper"><table>
+    <thead><tr><th>指标</th><th>当前状态</th><th>含义</th></tr></thead>
+    <tbody>
+      <tr><td>RSI (14)</td><td>~38 偏弱</td><td>接近超卖区但未触及</td></tr>
+      <tr><td>MACD</td><td>零轴下方</td><td>仍在下行通道</td></tr>
+      <tr><td>布林带</td><td>触及下轨</td><td>短期超跌反弹概率上升</td></tr>
+      <tr><td>MA200</td><td>HK$36附近</td><td>股价跌破长期均线16%</td></tr>
+      <tr><td>成交量</td><td>近期5日均量缩至2,000万股</td><td>下跌动能减弱</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>筹码与资金</h3>
+  <p>2025年Q4以来南向资金小幅净买入9896，港股通持仓比例从约8%升至10%。同时公司启动HK$18亿回购，截至2025年7月已用约HK$3亿（回购约918万股）+持续推进美股10b5-1计划。<strong>"机构资金+公司回购"双向托底</strong>，但反弹力度受永辉负面情绪压制。</p>
+</section>
+
+<!-- Module 10 -->
+<section class="module" id="catalysts">
+  <div class="module-header"><div class="module-num n10">10</div><h2>增长催化剂与前景展望</h2></div>
+
+  <h3>行业顺风</h3>
+  <ul>
+    <li><strong>全球IP消费品高速增长</strong>：2024-2030年CAGR 12%+，潮玩+IP衍生品双双扩张</li>
+    <li><strong>美国"中国新消费"出海窗口</strong>：MINISO、SHEIN、Temu代表的Z世代品牌渗透加速</li>
+    <li><strong>东南亚消费升级</strong>：印尼/越南/泰国年轻人对日韩美学有强需求</li>
+    <li><strong>中国可选消费回暖</strong>：2026 Q1同店销售指引高单位数增长</li>
+  </ul>
+
+  <h3>公司特定增长驱动</h3>
+  <ul>
+    <li><strong>美国大店战略</strong>：从500平方英尺标准店升级到5,000-10,000平方英尺旗舰店，单店收入翻3-5倍</li>
+    <li><strong>TOP TOY独立分拆</strong>：2026下半年提交申请，若成功估值释放可达HK$80-120亿</li>
+    <li><strong>IP矩阵深化</strong>：从授权产品向IP共创/原创IP（如盲盒、毛绒玩具）扩展</li>
+    <li><strong>永辉胖东来改造若成功</strong>：是巨大的reversal催化剂（但概率仅20-30%）</li>
+  </ul>
+
+  <h3>短期催化剂（未来6个月）</h3>
+  <ul>
+    <li><strong>2026年5月</strong>：Q1业绩公告，关注收入是否兑现+25%指引、海外加速幅度</li>
+    <li><strong>2026年6月</strong>：FY2025末期股息发放（预计每股HK$0.50-0.60）</li>
+    <li><strong>2026年7-8月</strong>：TOP TOY分拆方案细节披露</li>
+    <li><strong>2026年8月</strong>：H1业绩，永辉减亏进展</li>
+    <li><strong>持续</strong>：HK$18亿回购执行进度（截至2026年4月剩余约HK$15亿）</li>
+  </ul>
+
+  <h3>长期展望（3-5年到2030年）</h3>
+  <ul>
+    <li><strong>全球门店</strong>：从8,485家 → 13,000-15,000家</li>
+    <li><strong>营收</strong>：~RMB 400-500亿 (CAGR 18%)</li>
+    <li><strong>调整净利润</strong>：~RMB 60-80亿 (CAGR 17%)</li>
+    <li><strong>业务结构</strong>：海外占比从40%升至60%；TOP TOY独立后释放透明度</li>
+    <li><strong>估值重估</strong>：若永辉问题解决，PE有望从11x回到18-22x</li>
+  </ul>
+</section>
+
+<!-- Module 11 -->
+<section class="module" id="risk">
+  <div class="module-header"><div class="module-num n11">11</div><h2>风险矩阵</h2></div>
+
+  <div class="table-wrapper"><table>
+    <thead><tr><th>风险类型</th><th class="num">评分 (1-5)</th><th>说明</th></tr></thead>
+    <tbody>
+      <tr><td>永辉持续亏损风险</td><td class="num">5</td><td>2026年若永辉再亏RMB 20亿，MNSO权益法分摊~RMB 6亿，继续压制GAAP利润</td></tr>
+      <tr><td>叶国富资本配置失误风险</td><td class="num">4</td><td>下一笔"永辉式"收购概率虽低但破坏性大；超级投票权下小股东无制衡</td></tr>
+      <tr><td>美国关税/贸易摩擦风险</td><td class="num">3</td><td>~50%产品中国制造，美国关税升级会压缩毛利率</td></tr>
+      <tr><td>IP授权续约风险</td><td class="num">2</td><td>迪士尼/三丽鸥每年续约，若大幅提价或退出影响巨大</td></tr>
+      <tr><td>同店销售放缓风险</td><td class="num">2</td><td>当前国内同店改善+美国强劲，但消费降级周期可能反转</td></tr>
+      <tr><td>潮玩竞争加剧风险</td><td class="num">3</td><td>泡泡玛特+KKV+九木+海外Five Below挤压TOP TOY空间</td></tr>
+      <tr><td>汇率风险</td><td class="num">2</td><td>海外业务以美元/欧元计价，人民币波动有正面/负面双向影响</td></tr>
+      <tr><td>估值风险（向下）</td><td class="num">2</td><td>已经回调42%，估值回到合理区间</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>黑天鹅情景</h3>
+  <div class="callout danger">
+    <div class="callout-title">最坏情景压力测试</div>
+    <p style="margin-top:.5rem">假设同时发生：(1) 永辉2026年亏损扩大至RMB 30亿，MNSO分摊RMB 9亿；(2) 美国对华消费品加征关税导致毛利率下降3pp；(3) TOP TOY分拆失败；(4) 国内同店转负。</p>
+    <div class="code-block">2026E调整净利润 25亿 (vs 基准33亿)
+GAAP净利润 = 25 - 9 - 5 (其他) = RMB 11亿 (与2025持平)
+若市场情绪极悲观, P/E 10x: HK$22 (再跌27%)</div>
+    <p style="margin-top:.5rem"><strong>极端下跌空间约-25% (HK$22)</strong>。但此情景概率估计仅10-15%。</p>
+  </div>
+</section>
+
+<!-- Module 12 -->
+<section class="module" id="scorecard">
+  <div class="module-header"><div class="module-num n12">12</div><h2>巴菲特计分卡与投资决策</h2></div>
+
+  <h3>巴菲特计分卡（每项0-3分）</h3>
+  <div class="scorecard-grid">
+    <div class="score-row"><span class="criteria">1. 业务是否易于理解</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span><span class="score">3/3</span></div>
+    <div class="score-row"><span class="criteria">2. 经营历史是否一致</span><span class="dots"><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span><span class="score">1/3</span></div>
+    <div class="score-row"><span class="criteria">3. 长期前景是否良好</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span><span class="score">2/3</span></div>
+    <div class="score-row"><span class="criteria">4. 管理层坦诚与理性</span><span class="dots"><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span><span class="score">1/3</span></div>
+    <div class="score-row"><span class="criteria">5. 主人翁经营心态</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></span><span class="score">3/3</span></div>
+    <div class="score-row"><span class="criteria">6. 高ROE低负债</span><span class="dots"><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span><span class="score">1/3</span></div>
+    <div class="score-row"><span class="criteria">7. 强劲自由现金流</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span><span class="score">2/3</span></div>
+    <div class="score-row"><span class="criteria">8. 宽广经济护城河</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span><span class="score">2/3</span></div>
+    <div class="score-row"><span class="criteria">9. 保守会计处理</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span><span class="score">2/3</span></div>
+    <div class="score-row"><span class="criteria">10. 存在安全边际</span><span class="dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></span><span class="score">2/3</span></div>
+    <div class="score-row"><span class="criteria">11. 定价能力（抗通胀）</span><span class="dots"><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span><span class="score">1/3</span></div>
+    <div class="score-row"><span class="criteria">12. 低资本再投入需求</span><span class="dots"><span class="dot filled"></span><span class="dot"></span><span class="dot"></span></span><span class="score">1/3</span></div>
+  </div>
+
+  <div style="display:flex;align-items:center;gap:1.5rem;margin:1.5rem 0;padding:1.25rem;background:var(--bg-alt);border-radius:var(--radius)">
+    <div class="grade-badge c">C</div>
+    <div>
+      <div style="font-size:.82rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.08em">总分</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:700;color:var(--heading)">21 / 36</div>
+      <div style="font-size:.88rem;color:var(--text-secondary);margin-top:4px">C级：一般公司。强在创始人主导+商业模式简单+护城河；弱在永辉投资判断失误+经营波动+杠杆上升。</div>
+    </div>
+  </div>
+
+  <h3>投资决策</h3>
+  <div class="decision-box">
+    <div class="decision-header">
+      <div class="decision-rating">买入</div>
+      <div class="decision-price">
+        <div class="current">HK$30.18</div>
+        <div class="target">当前价 · 目标价 HK$40（独立估值中位数）</div>
       </div>
-    </section>
-
-    <!-- ══ Verdict ══ -->
-    <section class="verdict" id="verdict">
-      <div class="verdict-title">巴菲特的裁决</div>
-      <p><strong>名创优品的核心生意是巴菲特会喜欢的那种——轻资产的IP生活方式零售，100+全球IP授权，毛利率45%，创始人持股63%，全球8485家门店以每年700+速度扩张。</strong>但这头"现金奶牛"做了一件巴菲特最厌恶的事：拿62.7亿去买了一家持续亏损的超市（永辉），导致报告利润腰斩、负债率从41%飙升至62%。港股12倍调整后PE买入一个26%收入增长的公司本该是好生意——但你必须问自己：<strong>你愿意为叶国富的"永辉赌注"买单吗？</strong></p>
-    </section>
-
-    <!-- ══ Decision Summary ══ -->
-    <section class="decision-summary" id="decision-summary">
-      <div class="ds-title">决策摘要 Decision Summary</div>
-      <div class="ds-grid">
-        <div class="ds-item">
-          <div class="ds-label">评级</div>
-          <div class="ds-value green"><span class="badge buy">买入</span></div>
-        </div>
-        <div class="ds-item">
-          <div class="ds-label">计分</div>
-          <div class="ds-value">C+ 23/36</div>
-        </div>
-        <div class="ds-item">
-          <div class="ds-label">加权目标价</div>
-          <div class="ds-value green">HK$40 <span style="font-size:0.78rem;font-weight:400">(+25%)</span></div>
-        </div>
-        <div class="ds-item">
-          <div class="ds-label">首仓区间</div>
-          <div class="ds-value">HK$29</div>
-        </div>
-        <div class="ds-item">
-          <div class="ds-label">毛利率</div>
-          <div class="ds-value green">45.0%</div>
-        </div>
-        <div class="ds-item">
-          <div class="ds-label">安全边际</div>
-          <div class="ds-value">10-20%</div>
-        </div>
-      </div>
-      <div class="ds-scenarios">12个月情景：乐观 $50 (25%) &middot; 基准 $40 (50%) &middot; 悲观 $22 (25%)</div>
-    </section>
-
-    <!-- ══ Module 1: Overview ══ -->
-    <section class="module" id="overview">
-      <div class="module-header">
-        <div class="module-num n1">01</div>
-        <h2>公司概览与背景</h2>
-      </div>
-
-      <div class="table-wrapper">
-        <table>
-          <tbody>
-            <tr><td>代码 / 交易所</td><td>9896.HK / MNSO (NYSE)</td></tr>
-            <tr><td>市值</td><td class="num">HK$388亿</td></tr>
-            <tr><td>行业</td><td>IP生活方式零售</td></tr>
-            <tr><td>成立时间</td><td>2013年</td></tr>
-            <tr><td>创始人</td><td>叶国富（持股63.2%）</td></tr>
-            <tr><td>52周价格区间</td><td class="num">HK$27 — $52</td></tr>
-            <tr><td>门店数量</td><td class="num">8,485家（全球111国）</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>发展历程</h3>
-      <ul>
-        <li><strong>2013年</strong> — 叶国富创立名创优品，主打"优质低价"生活好物</li>
-        <li><strong>2020年</strong> — 纽交所上市（MNSO）</li>
-        <li><strong>2022年</strong> — 港交所双重上市（9896.HK）</li>
-        <li><strong>2023年</strong> — 明确"IP战略"，与迪士尼等100+IP合作</li>
-        <li><strong>2024年</strong> — 收购永辉超市29.4%股权（62.7亿元），成为第一大股东</li>
-        <li><strong>2025年</strong> — 全球门店达8,485家；收入214亿（+26%）；但永辉投资亏损8亿+，报告净利腰斩</li>
-      </ul>
-
-      <h3>股权结构</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>股东类型</th><th class="num">持股比例</th><th>说明</th></tr></thead>
-          <tbody>
-            <tr><td>叶国富+杨云云夫妇</td><td class="num">63.2%</td><td>创始人控股</td></tr>
-            <tr><td>Norges Bank</td><td class="num">~5%</td><td>挪威主权基金</td></tr>
-            <tr><td>公众</td><td class="num">~32%</td><td>H股+ADR投资者</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ══ Module 2: Management ══ -->
-    <section class="module" id="management">
-      <div class="module-header">
-        <div class="module-num n2">02</div>
-        <h2>管理层评估</h2>
-      </div>
-
-      <p><strong>叶国富</strong> — 创始人兼CEO，持股63.2%。典型的"创始人型"企业家，对IP零售有极强直觉。</p>
-
-      <div class="table-wrapper" style="margin-top:1rem">
-        <table>
-          <thead><tr><th>维度</th><th>评估</th><th class="num">评分</th></tr></thead>
-          <tbody>
-            <tr><td>资本配置能力</td><td>核心业务回报高但62.7亿永辉投资是重大失误，负债率从41%飙升至62%</td><td class="num">C+</td></tr>
-            <tr><td>坦诚程度</td><td>业绩会上回避永辉亏损问题被媒体批评</td><td class="num">C</td></tr>
-            <tr><td>利益绑定</td><td>63.2%持股——巴菲特最爱的创始人持股比例</td><td class="num">A</td></tr>
-            <tr><td>历史记录</td><td>核心MINISO业务执行优秀——收入5年复合增长30%+；但永辉是重大疑问</td><td class="num">B+</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout warning">
-        <div class="callout-title">永辉投资警示</div>
-        永辉投资是巴菲特最讨厌的资本配置类型——"用好公司的利润去补贴烂公司"。叶国富在业绩会上回避该话题更令人担忧。
-      </div>
-    </section>
-
-    <!-- ══ Module 3: Business Model ══ -->
-    <section class="module" id="business">
-      <div class="module-header">
-        <div class="module-num n3">03</div>
-        <h2>商业模式深度解析</h2>
-      </div>
-
-      <div class="highlight-box">
-        <div class="hl-label">巴菲特的"一句话测试"</div>
-        <p><strong>名创优品卖迪士尼和三丽鸥联名的便宜可爱小商品，全球8485家店，大部分是加盟的。</strong></p>
-        <p style="margin-top:0.5rem;color:var(--green);font-size:0.82rem;font-weight:600">&#10003; 通过测试。模式清晰，一句话就能说明白。</p>
-      </div>
-
-      <h3>收入结构（FY2025，RMB亿）</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>业务</th><th class="num">收入</th><th class="num">占比</th><th class="num">增速</th></tr></thead>
-          <tbody>
-            <tr><td>MINISO国内</td><td class="num">109.0</td><td class="num">51%</td><td class="num" style="color:var(--green)">+16.8%</td></tr>
-            <tr><td>MINISO海外</td><td class="num">123.4</td><td class="num">58%</td><td class="num" style="color:var(--green)">+29.3%</td></tr>
-            <tr><td>TOP TOY</td><td class="num">19.2</td><td class="num">9%</td><td class="num" style="color:var(--green)">+94.8%</td></tr>
-            <tr><td><strong>集团合计（含抵销）</strong></td><td class="num"><strong>214.4</strong></td><td class="num"><strong>100%</strong></td><td class="num" style="color:var(--green)"><strong>+26.2%</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>商业模式核心</h3>
-      <ul>
-        <li><strong>轻资产加盟模式：</strong>大部分门店为加盟商投资运营，名创优品收取商品销售分成</li>
-        <li><strong>IP授权生态：</strong>与100+全球IP合作（迪士尼、三丽鸥、宝可梦等），IP产品占比>30%</li>
-        <li><strong>全球供应链：</strong>80%+供应链在中国，成本优势明显</li>
-        <li><strong>TOP TOY：</strong>潮玩子品牌，334家店，增速最快（+95%）</li>
-      </ul>
-
-      <div class="callout info">
-        <div class="callout-title">IP联名是核心竞争力</div>
-        2024年IP授权费支出4.21亿元，但IP产品的毛利率比普通产品高10-15个百分点。
-      </div>
-    </section>
-
-    <!-- ══ Module 4: Moat ══ -->
-    <section class="module" id="moat">
-      <div class="module-header">
-        <div class="module-num n4">04</div>
-        <h2>经济护城河分析</h2>
-      </div>
-
-      <div class="moat-item">
-        <div class="moat-label">网络效应</div>
-        <span class="moat-rating narrow">窄</span>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">门店越多品牌认知越强，但不是经典网络效应。</p>
-
-      <div class="moat-item">
-        <div class="moat-label">转换成本</div>
-        <span class="moat-rating none">无</span>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">零转换成本，消费者可以随时去其他店。</p>
-
-      <div class="moat-item">
-        <div class="moat-label">成本优势</div>
-        <span class="moat-rating wide">宽</span>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">中国供应链+规模采购+加盟商分担成本，价格低于竞品30-50%。</p>
-
-      <div class="moat-item">
-        <div class="moat-label">无形资产</div>
-        <span class="moat-rating narrow">窄&#8594;宽</span>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">100+IP授权矩阵形成品牌差异化，但IP需持续续约。</p>
-
-      <div class="moat-item">
-        <div class="moat-label">有效规模</div>
-        <span class="moat-rating narrow">窄</span>
-      </div>
-      <p style="font-size:0.82rem;color:var(--text-secondary);padding:4px 0 8px">零售业竞争激烈，但"IP+极致性价比"的定位空间有限。</p>
-
-      <div class="highlight-box" style="margin-top:1rem">
-        <div class="hl-label">护城河总评</div>
-        <p><strong style="color:var(--yellow);font-size:1rem">窄偏宽护城河</strong> — 成本优势突出，IP生态逐步加强。</p>
-        <p style="margin-top:0.5rem;font-size:0.85rem"><strong>趋势：</strong>加宽中。IP生态持续扩展+全球扩张锁定优质位置。</p>
-      </div>
-    </section>
-
-    <!-- ══ Module 5: Financials ══ -->
-    <section class="module" id="financials">
-      <div class="module-header">
-        <div class="module-num n5">05</div>
-        <h2>财务深度分析</h2>
-      </div>
-
-      <h3>年度利润表趋势（RMB亿）</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr><th>指标</th><th class="num">FY2022</th><th class="num">FY2023</th><th class="num">FY2024</th><th class="num">FY2025</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>营收</td><td class="num">100.9</td><td class="num">138.4</td><td class="num">169.9</td><td class="num">214.4</td></tr>
-            <tr><td>营收增速</td><td class="num">—</td><td class="num" style="color:var(--green)">+37.2%</td><td class="num" style="color:var(--green)">+22.8%</td><td class="num" style="color:var(--green)">+26.2%</td></tr>
-            <tr><td>毛利润</td><td class="num">34.6</td><td class="num">57.0</td><td class="num">76.4</td><td class="num">~96.5</td></tr>
-            <tr><td>毛利率</td><td class="num">34.3%</td><td class="num">41.2%</td><td class="num">44.9%</td><td class="num">~45.0%</td></tr>
-            <tr><td>调整后净利</td><td class="num">14.4</td><td class="num">23.4</td><td class="num">27.2</td><td class="num">29.0</td></tr>
-            <tr><td>报告净利</td><td class="num">—</td><td class="num">22.7</td><td class="num">26.4</td><td class="num" style="color:var(--red)">12.1</td></tr>
-            <tr><td>调整后净利增速</td><td class="num">—</td><td class="num" style="color:var(--green)">+62.5%</td><td class="num" style="color:var(--green)">+16.2%</td><td class="num" style="color:var(--green)">+6.5%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout danger">
-        <div class="callout-title">利润腰斩警报</div>
-        报告净利从26.4亿暴跌至12.1亿（-54%）——元凶：永辉超市投资亏损约8亿+。若剔除永辉，核心业务仍在健康增长。
-      </div>
-
-      <h3>资产负债表健康度</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>指标</th><th class="num">数值</th><th>评价</th></tr></thead>
-          <tbody>
-            <tr><td>总资产</td><td class="num">~RMB 280亿</td><td>—</td></tr>
-            <tr><td>资产负债率</td><td class="num">62.2%</td><td style="color:var(--red)">从41%飙升——永辉收购导致</td></tr>
-            <tr><td>有息借款</td><td class="num">RMB 75亿</td><td style="color:var(--red)">从几乎零到75亿</td></tr>
-            <tr><td>现金</td><td class="num">RMB 63亿</td><td>—</td></tr>
-            <tr><td>永辉投资账面</td><td class="num">~RMB 55亿</td><td style="color:var(--yellow)">已减值</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>现金流分析</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>指标</th><th class="num">数值</th><th>评价</th></tr></thead>
-          <tbody>
-            <tr><td>经营现金流</td><td class="num">~RMB 27亿</td><td style="color:var(--green)">核心业务健康</td></tr>
-            <tr><td>自由现金流</td><td class="num">~RMB 20亿</td><td style="color:var(--green)">充裕</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>所有者盈余计算</h3>
-      <div class="code-block">所有者盈余(核心业务) = 调整后净利29亿 + D&A~5亿 - 维护capex~3亿 ≈ RMB 31亿
-
-收益率 = 31 / 市值(RMB~352亿) = 8.8%</div>
-
-      <h3>杜邦分析（ROE拆解）</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>组成部分</th><th class="num">数值</th><th>说明</th></tr></thead>
-          <tbody>
-            <tr><td>净利率（调整后）</td><td class="num">13.5%</td><td>盈利能力强劲</td></tr>
-            <tr><td>资产周转率</td><td class="num">0.76x</td><td>轻资产模式效率高</td></tr>
-            <tr><td>财务杠杆</td><td class="num">2.6x</td><td style="color:var(--red)">因永辉收购大幅提升</td></tr>
-            <tr><td><strong>ROE（调整后）</strong></td><td class="num"><strong>~26.7%</strong></td><td>但因永辉拖累，实际报告ROE大幅低于此</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout success">
-        <div class="callout-title">核心业务亮点</div>
-        核心MINISO业务毛利率从34%提升至45%——IP策略正在兑现"品牌溢价"。
-      </div>
-    </section>
-
-    <!-- ══ Module 6: Earnings Call ══ -->
-    <section class="module" id="earningscall">
-      <div class="module-header">
-        <div class="module-num n6">06</div>
-        <h2>电话会分析</h2>
-      </div>
-
-      <h3>FY2025业绩电话会核心信息（2026年3月）</h3>
-      <ol>
-        <li><strong>收入增长26.2%超预期</strong> — 海外尤其强劲（+29.3%）</li>
-        <li><strong>毛利率继续提升至~45%</strong> — IP策略持续兑现</li>
-        <li><strong>TOP TOY爆发式增长95%</strong> — 贡献19.2亿收入</li>
-        <li><strong>永辉：叶国富被问及时回避正面回答</strong> — 称"需要时间"</li>
-        <li><strong>2026年指引</strong> — 高双位数收入增长，海外和国内同店销售低单位数增长</li>
-      </ol>
-
-      <div class="callout warning">
-        <div class="callout-title">管理层信号</div>
-        叶国富在永辉话题上的回避令分析师不满——这不是一个好信号。
-      </div>
-    </section>
-
-    <!-- ══ Module 7: Valuation ══ -->
-    <section class="module" id="valuation">
-      <div class="module-header">
-        <div class="module-num n7">07</div>
-        <h2>多模型估值</h2>
-      </div>
-
-      <h3>1. 相对估值</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>指标</th><th class="num">名创(H)</th><th class="num">泡泡玛特</th><th class="num">名创(US)</th><th class="num">行业均值</th></tr></thead>
-          <tbody>
-            <tr><td>PE（调整后）</td><td class="num">12.2x</td><td class="num">~35x</td><td class="num">~12x</td><td class="num">~18x</td></tr>
-            <tr><td>P/S</td><td class="num">1.8x</td><td class="num">~8x</td><td class="num">—</td><td class="num">~3x</td></tr>
-            <tr><td>毛利率</td><td class="num">45%</td><td class="num">~65%</td><td class="num">—</td><td class="num">~40%</td></tr>
-            <tr><td>增速</td><td class="num" style="color:var(--green)">+26%</td><td class="num">+50%</td><td class="num">—</td><td class="num">+15%</td></tr>
-            <tr><td>PEG</td><td class="num" style="color:var(--green)">~0.5</td><td class="num">~0.7</td><td class="num">—</td><td class="num">~1.0</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout success">
-        <div class="callout-title">PEG 极度低估</div>
-        12x PE / 26%增长 = PEG 0.47——极度低估。市场在用"永辉折价"惩罚整家公司。
-      </div>
-
-      <h3>2. DCF（现金流折现）</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>情景</th><th class="num">内在价值/股</th><th class="num">vs 现价</th></tr></thead>
-          <tbody>
-            <tr><td>悲观</td><td class="num">HK$22</td><td class="num" style="color:var(--red)">-31%</td></tr>
-            <tr><td><strong>基准</strong></td><td class="num"><strong>HK$40</strong></td><td class="num" style="color:var(--green)"><strong>+25%</strong></td></tr>
-            <tr><td>乐观</td><td class="num">HK$55</td><td class="num" style="color:var(--green)">+72%</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>3. DDM（股息折现模型）</h3>
-      <p>不太适用——名创优品为成长型公司，股息分配尚不稳定。</p>
-
-      <h3>4. 反向DCF</h3>
-      <div class="callout warning">
-        <div class="callout-title">隐含增长荒谬</div>
-        当前价隐含增长约5%——对一个26%增长的公司来说，荒谬地低。
-      </div>
-
-      <h3>5. SOTP（分部加总）</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>业务板块</th><th>估值方法</th><th class="num">估值(RMB亿)</th></tr></thead>
-          <tbody>
-            <tr><td>MINISO国内</td><td>20x 调整利润</td><td class="num">~200</td></tr>
-            <tr><td>MINISO海外</td><td>25x 调整利润</td><td class="num">~175</td></tr>
-            <tr><td>TOP TOY</td><td>3x 收入</td><td class="num">~58</td></tr>
-            <tr><td>永辉投资</td><td>账面价</td><td class="num">~55</td></tr>
-            <tr><td>减：净负债</td><td></td><td class="num">-12</td></tr>
-            <tr><td><strong>SOTP合计</strong></td><td></td><td class="num"><strong>~476</strong></td></tr>
-            <tr><td><strong>折合港币</strong></td><td></td><td class="num"><strong>~HK$524亿</strong></td></tr>
-            <tr><td><strong>每股价值</strong></td><td></td><td class="num"><strong>~HK$43</strong></td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="highlight-box">
-        <div class="hl-label">加权合理价值</div>
-        <p style="font-size:1.3rem;font-weight:700;color:var(--heading);font-family:'JetBrains Mono',monospace">HK$35 — $45 / 股 &nbsp; 中位~HK$40</p>
-        <p style="margin-top:0.5rem;font-size:0.85rem">当前价HK$32.04 &#8594; <strong style="color:var(--green)">安全边际约 10-20%</strong></p>
-      </div>
-    </section>
-
-    <!-- ══ Module 8: Competition ══ -->
-    <section class="module" id="competition">
-      <div class="module-header">
-        <div class="module-num n8">08</div>
-        <h2>竞争与行业分析</h2>
-      </div>
-
-      <h3>主要竞争对手对比</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>公司</th><th class="num">门店</th><th class="num">收入</th><th class="num">增速</th><th class="num">毛利率</th><th class="num">PE</th></tr></thead>
-          <tbody>
-            <tr><td style="color:var(--green)">名创优品</td><td class="num" style="color:var(--green)">8,485</td><td class="num">RMB 214亿</td><td class="num" style="color:var(--green)">+26%</td><td class="num">45%</td><td class="num" style="color:var(--green)">12x</td></tr>
-            <tr><td>泡泡玛特</td><td class="num">~600</td><td class="num">~RMB 130亿</td><td class="num">+50%</td><td class="num">65%</td><td class="num">35x</td></tr>
-            <tr><td>MUMUSO/类似</td><td class="num">&lt;1,000</td><td class="num">小规模</td><td class="num">—</td><td class="num">—</td><td class="num">非上市</td></tr>
-            <tr><td>Dollar Tree</td><td class="num">~16,000</td><td class="num">~$31B</td><td class="num">-2%</td><td class="num">36%</td><td class="num">14x</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>波特五力分析</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>力量</th><th>强度</th><th>分析</th></tr></thead>
-          <tbody>
-            <tr><td>供应商议价力</td><td style="color:var(--green)">低 &#10004;</td><td>中国供应链选择多，采购规模大</td></tr>
-            <tr><td>买方议价力</td><td style="color:var(--red)">高 &#9888;</td><td>零转换成本，消费者可随时去其他店</td></tr>
-            <tr><td>替代品威胁</td><td style="color:var(--yellow)">中</td><td>电商+其他零售渠道构成替代</td></tr>
-            <tr><td>新进入者威胁</td><td style="color:var(--yellow)">中</td><td>资本要求低，但IP+供应链壁垒</td></tr>
-            <tr><td>行业内竞争</td><td style="color:var(--red)">高 &#9888;</td><td>零售业天然高竞争</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ══ Module 9: Technical ══ -->
-    <section class="module" id="technical">
-      <div class="module-header">
-        <div class="module-num n9">09</div>
-        <h2>技术面分析</h2>
-      </div>
-
-      <div class="callout info">
-        <div class="callout-title">注意</div>
-        巴菲特本人不使用技术分析。本节作为完整性补充，供交易型投资者参考。
-      </div>
-
-      <h3>关键支撑与阻力位</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>类型</th><th class="num">价位</th><th>依据</th></tr></thead>
-          <tbody>
-            <tr><td style="color:var(--green)">强支撑</td><td class="num">HK$27</td><td>52周最低点</td></tr>
-            <tr><td style="color:var(--green)">支撑</td><td class="num">HK$30</td><td>近期交易密集区</td></tr>
-            <tr><td style="color:var(--red)">阻力</td><td class="num">HK$35</td><td>前期平台</td></tr>
-            <tr><td style="color:var(--red)">强阻力</td><td class="num">HK$40-42</td><td>前期高点区域</td></tr>
-            <tr><td style="color:var(--red)">历史高</td><td class="num">HK$52</td><td>52周最高点</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <!-- ══ Module 10: Catalysts ══ -->
-    <section class="module" id="catalysts">
-      <div class="module-header">
-        <div class="module-num n10">10</div>
-        <h2>增长催化剂与前景展望</h2>
-      </div>
-
-      <h3>短期催化剂（未来6个月）</h3>
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>催化剂</th><th>时间</th><th>影响方向</th></tr></thead>
-          <tbody>
-            <tr><td>末期派息</td><td>2026年4月</td><td style="color:var(--green)">HK$0.094/股</td></tr>
-            <tr><td>Q1 FY2026业绩</td><td>2026年5月</td><td>验证增长持续性</td></tr>
-            <tr><td>永辉整合进展</td><td>持续中</td><td style="color:var(--yellow)">关注亏损收窄情况</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h3>长期增长驱动力（3-5年）</h3>
-      <ul>
-        <li><strong>IP生态持续扩展</strong> — 从100+IP向200+IP扩展，持续强化品牌差异化</li>
-        <li><strong>海外高速扩张</strong> — 每年450+家新店，覆盖全球111国</li>
-        <li><strong>TOP TOY独立上市可能</strong> — 潮玩业务高增长，释放估值潜力</li>
-        <li><strong>永辉扭亏（如果成功）</strong> — 将消除最大估值折价因素</li>
-      </ul>
-
-      <h3>主要风险</h3>
-      <ul>
-        <li><strong>永辉继续亏损</strong> — 持续侵蚀利润</li>
-        <li><strong>全球消费疲软</strong> — 可选消费品需求承压</li>
-        <li><strong>IP续约风险</strong> — 核心IP授权到期不续约</li>
-      </ul>
-    </section>
-
-    <!-- ══ Module 11: Risk ══ -->
-    <section class="module" id="risk">
-      <div class="module-header">
-        <div class="module-num n11">11</div>
-        <h2>风险矩阵</h2>
-      </div>
-
-      <div class="table-wrapper">
-        <table>
-          <thead><tr><th>风险类型</th><th class="num">评分(1-5)</th><th>具体风险</th></tr></thead>
-          <tbody>
-            <tr><td>经营风险</td><td class="num" style="color:var(--yellow)">3</td><td>永辉整合执行风险</td></tr>
-            <tr><td>财务风险</td><td class="num" style="color:var(--yellow)">3</td><td>D/A 62% + 75亿借款</td></tr>
-            <tr><td>竞争风险</td><td class="num" style="color:var(--yellow)">3</td><td>零售业天然竞争激烈</td></tr>
-            <tr><td>监管风险</td><td class="num">2</td><td>相对可控</td></tr>
-            <tr><td>宏观风险</td><td class="num" style="color:var(--yellow)">3</td><td>消费疲软影响可选消费</td></tr>
-            <tr><td>估值风险</td><td class="num" style="color:var(--green)">1 &#10004;</td><td>PEG 0.47极低</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="callout danger" style="margin-top:1rem">
-        <div class="callout-title">永辉特别风险</div>
-        永辉若继续年亏25亿+，名创优品每年承担~7.5亿亏损（持股29.4%），将持续侵蚀利润。<strong>最坏情况：永辉资不抵债，62.7亿投资全额减值 &#8594; 股价可能跌至HK$18-20。</strong>
-      </div>
-    </section>
-
-    <!-- ══ Module 12: Scorecard ══ -->
-    <section class="module" id="scorecard">
-      <div class="module-header">
-        <div class="module-num n12">12</div>
-        <h2>巴菲特计分卡与投资决策</h2>
-      </div>
-
-      <h3>巴菲特计分卡（满分36分）</h3>
-      <div class="scorecard-grid">
-        <div class="score-row"><span class="criteria">业务是否易于理解</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
-        <div class="score-row"><span class="criteria">经营历史是否一致</span><div class="dots"><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div><span class="score">1/3</span></div>
-        <div class="score-row"><span class="criteria">长期前景是否良好</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
-        <div class="score-row"><span class="criteria">管理层坦诚与理性</span><div class="dots"><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div><span class="score">1/3</span></div>
-        <div class="score-row"><span class="criteria">主人翁经营心态</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
-        <div class="score-row"><span class="criteria">高ROE低负债</span><div class="dots"><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div><span class="score">1/3</span></div>
-        <div class="score-row"><span class="criteria">强劲自由现金流</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
-        <div class="score-row"><span class="criteria">宽广经济护城河</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
-        <div class="score-row"><span class="criteria">保守会计处理</span><div class="dots"><div class="dot filled"></div><div class="dot"></div><div class="dot"></div></div><span class="score">1/3</span></div>
-        <div class="score-row"><span class="criteria">存在安全边际</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
-        <div class="score-row"><span class="criteria">定价能力（抗通胀）</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div><span class="score">2/3</span></div>
-        <div class="score-row"><span class="criteria">低资本再投入需求</span><div class="dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div><span class="score">3/3</span></div>
-      </div>
-
-      <div style="display:flex;align-items:center;gap:16px;margin:1.5rem 0;padding:1rem;background:var(--bg-alt);border-radius:var(--radius)">
-        <div class="grade-badge c">C+</div>
-        <div>
-          <div style="font-weight:700;color:var(--heading);font-size:1.1rem">总分 23/36 — 一般偏上</div>
-          <div style="font-size:0.82rem;color:var(--text-secondary)">A(30-36) 杰出 &middot; B(24-29) 优秀 &middot; C(18-23) 一般 &middot; D(12-17) 令人担忧</div>
-        </div>
-      </div>
-
-      <!-- ── Investment Decision ── -->
-      <h3>投资决策</h3>
-
-      <div class="decision-box">
-        <div class="decision-header">
-          <div class="decision-rating">买入（附重大保留意见：永辉风险）</div>
-          <div class="decision-price">
-            <div class="current">HK$32.04</div>
-            <div class="target">加权目标价 <strong>HK$40</strong> &nbsp; | &nbsp; 资本回报 <strong style="color:var(--green)">+25%</strong> + 分红 &#8776; 总回报 <strong style="color:var(--green)">~27%</strong></div>
-          </div>
-        </div>
-
-        <h3>12个月目标价</h3>
-        <div class="table-wrapper">
-          <table>
-            <thead><tr><th>情景</th><th class="num">目标价</th><th class="num">概率</th><th>逻辑</th></tr></thead>
-            <tbody>
-              <tr><td>乐观</td><td class="num" style="color:var(--green)">$50</td><td class="num">25%</td><td>永辉扭亏 + IP生态爆发 + 估值修复</td></tr>
-              <tr><td><strong>基准</strong></td><td class="num"><strong>$40</strong></td><td class="num"><strong>50%</strong></td><td>核心业务持续增长 + 永辉维持现状</td></tr>
-              <tr><td>悲观</td><td class="num" style="color:var(--red)">$22</td><td class="num">25%</td><td>永辉大幅减值 + 消费疲软</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>分批建仓策略</h3>
-        <div class="table-wrapper">
-          <table>
-            <thead><tr><th>建仓</th><th class="num">价位</th><th class="num">仓位占比</th></tr></thead>
-            <tbody>
-              <tr><td>首仓</td><td class="num">HK$29</td><td class="num">40%</td></tr>
-              <tr><td>二仓</td><td class="num">HK$25</td><td class="num">35%</td></tr>
-              <tr><td>三仓</td><td class="num">HK$22</td><td class="num">25%</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>止盈策略</h3>
-        <div class="table-wrapper">
-          <table>
-            <thead><tr><th>操作</th><th class="num">价位</th><th>说明</th></tr></thead>
-            <tbody>
-              <tr><td style="color:var(--green)">止盈①</td><td class="num">HK$35</td><td>减仓30%</td></tr>
-              <tr><td style="color:var(--green)">止盈②</td><td class="num">HK$40</td><td>减仓30%</td></tr>
-              <tr><td style="color:var(--green)">止盈③</td><td class="num">HK$46</td><td>清仓</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>仓位管理</h3>
-        <ul>
-          <li><strong>建议仓位：</strong>占投资组合的3-5%（因永辉不确定性不宜过重）</li>
-          <li><strong>建议持有周期：</strong>中长期（2-3年）</li>
-          <li><strong>适合投资者：</strong>能承受永辉风险波动、看好IP零售赛道的成长型价值投资者</li>
-        </ul>
-
-        <h3>关键监控指标</h3>
-        <ol>
-          <li>同店销售增速</li>
-          <li>海外新店数量</li>
-          <li>TOP TOY增速</li>
-          <li>永辉季度亏损</li>
-          <li>毛利率变化</li>
-          <li>负债率趋势</li>
-        </ol>
-
-        <h3>事件时间表</h3>
-        <div class="table-wrapper">
-          <table>
-            <thead><tr><th>时间</th><th>事件</th></tr></thead>
-            <tbody>
-              <tr><td>2026年4月17日</td><td>末期派息（HK$0.094/股）</td></tr>
-              <tr><td>2026年5月</td><td>Q1 FY2026业绩</td></tr>
-              <tr><td>2026年8月</td><td>中期业绩公布</td></tr>
-              <tr><td>待定</td><td>TOP TOY分拆进展</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- ══ Disclaimer ══ -->
-    <div class="disclaimer">
-      <strong>免责声明：</strong>本分析仅供教育和研究用途，不构成投资建议。"巴菲特"视角是一个受沃伦·巴菲特公开表述的投资原则启发的分析框架——它并不代表沃伦·巴菲特本人对任何具体公司的观点。所有投资都有风险，请在做出投资决策前咨询合格的财务顾问。
     </div>
 
-    <!-- ══ Footer ══ -->
-    <footer class="page-footer">
-      <p>Generated by <strong>巴菲特神谕分析师</strong> &middot; <a href="https://github.com/JaceXie" target="_blank" rel="noopener">@JaceXie</a></p>
-      <p style="margin-top:4px">分析日期：2026-04-08 &middot; HKEX: 9896</p>
-    </footer>
+    <h3 style="margin-top:0">12个月目标价情景</h3>
+    <div class="table-wrapper"><table>
+      <thead><tr><th>情景</th><th class="num">目标价</th><th class="num">上行空间</th><th class="num">概率</th></tr></thead>
+      <tbody>
+        <tr><td>乐观（永辉减亏+TOP TOY分拆+海外加速）</td><td class="num">HK$50</td><td class="num">+66%</td><td class="num">25%</td></tr>
+        <tr><td>基准（运营持续+永辉持平+回购支撑）</td><td class="num">HK$40</td><td class="num">+33%</td><td class="num">50%</td></tr>
+        <tr><td>悲观（永辉持续大额亏损+全球消费走弱）</td><td class="num">HK$25</td><td class="num">-17%</td><td class="num">25%</td></tr>
+      </tbody>
+    </table></div>
+    <p style="margin-top:.5rem"><strong>概率加权目标 = 0.25×50 + 0.5×40 + 0.25×25 = HK$38.75</strong></p>
 
-  </main>
+    <h3>分批建仓策略（精确值）</h3>
+    <div class="table-wrapper"><table>
+      <thead><tr><th>批次</th><th class="num">价格 (精确)</th><th class="num">仓位</th><th>触发条件</th></tr></thead>
+      <tbody>
+        <tr><td>首仓</td><td class="num">HK$32</td><td class="num">40%</td><td>FV HK$40 × 80%（当前价已深于此，可立即启动）</td></tr>
+        <tr><td>二仓</td><td class="num">HK$28</td><td class="num">30%</td><td>FV × 70%（若Q1业绩短期负面回踩此价加仓）</td></tr>
+        <tr><td>三仓</td><td class="num">HK$24</td><td class="num">30%</td><td>FV × 60%（极端悲观情景，黑天鹅触发）</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>止盈策略（精确值，不设止损）</h3>
+    <div class="table-wrapper"><table>
+      <thead><tr><th>止盈档</th><th class="num">价格</th><th class="num">减仓比例</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr><td>止盈 1</td><td class="num">HK$40</td><td class="num">30%</td><td>达到独立估值中位数（FV）</td></tr>
+        <tr><td>止盈 2</td><td class="num">HK$50</td><td class="num">40%</td><td>达到FV × 125%（永辉问题缓解+TOP TOY催化）</td></tr>
+        <tr><td>止盈 3</td><td class="num">HK$60</td><td class="num">30%</td><td>达到FV × 150%（市场重新定价为成长股）</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3>仓位管理</h3>
+    <ul>
+      <li><strong>组合仓位</strong>：建议占组合 5-10%（成长+价值兼具的港股配置）</li>
+      <li><strong>持有周期</strong>：2-3年中期波段（等待永辉问题缓解+TOP TOY分拆催化）</li>
+      <li><strong>类比角色</strong>：组合中相当于"全球IP零售龙头+特殊事件机会"的混合仓</li>
+    </ul>
+
+    <h3>关键监控指标</h3>
+    <ul>
+      <li>每季度：调整净利润增速、毛利率、海外SSS增速、永辉权益法亏损规模</li>
+      <li>每半年：门店净增速度、TOP TOY增速、回购执行进度</li>
+      <li>年度：海外占比、IP合作矩阵变化、净负债结构</li>
+      <li>特别事件：TOP TOY分拆进展、永辉胖东来店改造效果、美国关税政策</li>
+    </ul>
+
+    <h3>事件时间表</h3>
+    <ul>
+      <li><strong>2026年5月中下旬</strong>：Q1 2026 业绩公告</li>
+      <li><strong>2026年6月</strong>：末期股息发放</li>
+      <li><strong>2026年7-8月</strong>：TOP TOY分拆方案细节</li>
+      <li><strong>2026年8月下旬</strong>：H1 2026业绩</li>
+      <li><strong>2026年11月</strong>：Q3 2026业绩</li>
+      <li><strong>下一重新审视节点</strong>：2026-05 Q1业绩 或 股价触及 HK$40（止盈档1）时</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Disclaimer -->
+<section class="disclaimer">
+  <strong>⚠️ 免责声明</strong>：本分析仅供教育和研究用途，不构成投资建议。"巴菲特"视角是一个受沃伦·巴菲特公开表述的投资原则启发的分析框架——它并不代表沃伦·巴菲特本人对任何具体公司的观点。所有投资都有风险，请在做出投资决策前咨询合格的财务顾问。数据来源：公司2025年年报、Q1-Q4季报、电话会记录、港交所披露易、新浪财经、交银国际研究报告、Futubull新闻聚合。
+</section>
+
+<!-- Footer -->
+<footer class="page-footer">
+  <p>巴菲特神谕分析师 · 生成于 2026-04-21（更新版）</p>
+  <p>HKEX: 9896 · MINISO Group Holding Limited</p>
+</footer>
+
+</main>
 </div>
 
-<!-- ══ Back to Top ══ -->
-<button class="back-to-top" id="backToTop" title="回到顶部" aria-label="Back to top">&#8593;</button>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
 
-<!-- ═══════════════════════════════
-     Scripts
-     ═══════════════════════════════ -->
 <script>
-(function() {
-  // ── Theme Toggle ──
-  const html = document.documentElement;
+(function(){
+  const STORAGE_KEY = '9896-theme';
+  const htmlEl = document.documentElement;
   const toggle = document.getElementById('themeToggle');
   const icon = document.getElementById('themeIcon');
-
-  const saved = localStorage.getItem('miniso-theme');
-  if (saved) {
-    html.setAttribute('data-theme', saved);
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    html.setAttribute('data-theme', 'dark');
-  }
-
-  function updateIcon() {
-    icon.innerHTML = html.getAttribute('data-theme') === 'dark' ? '&#9788;' : '&#9790;';
-  }
-  updateIcon();
-
-  toggle.addEventListener('click', function() {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    html.setAttribute('data-theme', next);
-    localStorage.setItem('miniso-theme', next);
-    updateIcon();
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if(saved){htmlEl.setAttribute('data-theme', saved); icon.innerHTML = saved==='dark' ? '&#9728;' : '&#9790;';}
+  toggle.addEventListener('click', function(){
+    const cur = htmlEl.getAttribute('data-theme');
+    const next = cur === 'light' ? 'dark' : 'light';
+    htmlEl.setAttribute('data-theme', next);
+    localStorage.setItem(STORAGE_KEY, next);
+    icon.innerHTML = next === 'dark' ? '&#9728;' : '&#9790;';
   });
 
-  // ── Sidebar Active State ──
-  const sections = document.querySelectorAll('.module, .verdict, .hero, .decision-summary');
-  const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-  function updateActive() {
-    let current = '';
-    sections.forEach(function(section) {
-      const top = section.offsetTop - 100;
-      if (window.scrollY >= top) {
-        current = section.id;
-      }
-    });
-    navLinks.forEach(function(link) {
-      link.classList.remove('active');
-      if (link.getAttribute('href') === '#' + current) {
-        link.classList.add('active');
-      }
-    });
+  const links = document.querySelectorAll('.sidebar-nav a');
+  const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+  function onScroll(){
+    let current = sections[0];
+    for(const sec of sections){
+      if(sec.getBoundingClientRect().top - 100 <= 0) current = sec;
+    }
+    links.forEach(a => a.classList.remove('active'));
+    if(current){
+      const active = document.querySelector('.sidebar-nav a[href="#'+current.id+'"]');
+      if(active) active.classList.add('active');
+    }
+    const btn = document.getElementById('backToTop');
+    if(window.scrollY > 400) btn.classList.add('visible'); else btn.classList.remove('visible');
   }
-
-  window.addEventListener('scroll', updateActive, { passive: true });
-  updateActive();
-
-  // ── Back to Top ──
-  var btn = document.getElementById('backToTop');
-  window.addEventListener('scroll', function() {
-    btn.classList.toggle('visible', window.scrollY > 400);
-  }, { passive: true });
-  btn.addEventListener('click', function() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-
-  // ── Smooth scroll for sidebar ──
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      var target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
+  window.addEventListener('scroll', onScroll, {passive:true});
+  document.getElementById('backToTop').addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+  onScroll();
 })();
 </script>
+
 </body>
 </html>
